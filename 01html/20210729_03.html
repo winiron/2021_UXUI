@@ -12,23 +12,20 @@
                 padding:0;
                 box-sizing:border-box;
             }
-            .box { color: red;}
-            div#header {
-                background-color: azure;
-            }
-            div { background-color: blueviolet;}
-            div.box { background-color: blue;}
-            #section { background-color: coral;}
+            #section > div.menu > p {background-color: brown; }
+            #section p { background-color: orange; }
+            div.menu > p { background-color: black !important;  color: white;}
+            /* * < class < id < inline style(tag Attrebute) < !important */
         </style>
     </head>
     <body>
-        <div id="wrap">
-            <div id="header">
-                <div class="box">Header</div>
+        <div id="section">
+            <div class="menu">
+                <p>test1</p>
+                <p>test2</p>
+                <p>test3</p>
             </div>
-            <div id="section">
-                section
-            </div>
-        </div>         
+            <p>child</p>
+        </div> 
     </body>
 </html>
