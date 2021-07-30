@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="/css/reset.css" type="text/css" rel="stylesheet">
+        <style>
+            .wrap {
+                width: 100%;
+            }
+            header {
+                margin:0 auto;
+                width: 100%;
+                height: 250px;
+            }
+            header .top {
+                width: 100%; height:40px;
+                background-color: black;
+            }
+            header .logo {
+                width:100%; height: 140px;
+                text-align: center;
+                line-height: 140px;
+                font-size:4rem;
+                font-weight: bold;
+            }
+            header nav {
+                width: 100%; height: 70px;
+                border-top: 1px solid lightgrey;
+                border-bottom: 1px solid lightgrey;
+            }
+            ul {
+                margin:0 auto;
+                width: 600px; height:100%; 
+                
+            }
+            li {
+                float: left;
+                width:25%;
+                text-align: center;
+                line-height: 70px;
+            }
+            li:hover {
+                background-color:black;
+                color : white;
+            }
+            .mainBanner {
+                margin:0 auto;
+                width: 100%;
+                height:350px;
+                background:url("../images/strawberry.png") no-repeat center;
+            }
+            section {
+                margin:0 auto;
+                width:90%;
+                height:350px; 
+                background-color:blueviolet;    
+            }
+            section>div {
+                width:50%; height:100%;
+                float: left;
+            }
+            .aside {
+                background-color: brown;
+            }
+            .content {
+                background-color:crimson;
+            }
+            footer {
+                margin:0 auto;
+                width:100%;
+                height: 100px;
+                background-color: black;
+                color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <header>
+                <div class="top"></div>
+                <div class="logo">LOGO</div>
+                <nav>
+                    <ul>
+                        <li>menu01</li>
+                        <li>menu02</li>
+                        <li>menu03</li>
+                        <li>menu04</li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="mainBanner"></div>
+            <section>
+                <div class="aside">asid</div>
+                <div class="content">content</div>
+            </section>
+            <footer>FOOTER</footer>
+        </div>       
+    </body>
+</html>
