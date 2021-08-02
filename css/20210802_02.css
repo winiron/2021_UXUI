@@ -1,0 +1,72 @@
+#container {
+    width:100%;
+}
+header {
+    width:100%;  height:148px;
+}
+header #topArea {
+    width:100%; height:28px;
+    border-bottom:1px solid lightgrey;
+}
+span {
+    background-image:url(../images/img2.jpg) no-reapet;
+}
+header #topArea #lnbArea {
+    width:980px;
+    margin:0 auto;
+}
+header #topArea #lnbArea .lnb {
+    width:auto;
+    float: right;
+}
+header #topArea #lnbArea .lnb li {
+    float: left;
+
+}
+header #topArea #lnbArea .lnb li a {
+    display: inline-block;
+    color: #888888;
+    padding-left:10px;
+    padding-right:10px;
+    height:12px;
+    font-size:0.7rem;
+    line-height:12px;
+    text-align:center;
+    border-right:1px solid #dddddd;
+}
+header #topArea #lnbArea .lnb li a:hover { 
+    color: #43484e;
+}
+
+#logo{
+    width:100%; height:75px; 
+    font-size:1.5rem; font-weight:bold; text-align:center; line-height:74px;    
+}
+nav {
+    width:100%;
+    background-color:#1d5da4;
+}
+.gnb {
+    margin:0 auto;
+    width:980px; 
+    background-color: 1d5da4;
+}
+.gnb li {
+    float: left;
+    width:16.66666666666667%;
+    border-left:1px solid #336dac;
+}
+.gnb li a:hover {
+    background-color:#092c52;
+}
+.gnb li:last-child {
+    border-right:1px solid #336dac;
+}
+
+.gnb li a {
+    display:inline-block;
+    width:100%; height: 45px;
+    color:white;
+    text-align: center;
+    line-height:45px;
+}
