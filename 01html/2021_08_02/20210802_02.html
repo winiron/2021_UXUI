@@ -6,12 +6,21 @@
         <title>Document</title>
         <link href="/css/reset.css" type="text/css" rel="stylesheet">
         <link href="/css/20210802_02.css" type="text/css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />
+        <script>
+            $(document).ready(function(){
+                $('.slider').bxSlider();
+            });
+        </script>
     </head>
     <body>
-        <div id="container">
+        <div id="wrap">
             <header>
                 <div id="topArea" > 
-                    <div id="lnbArea" >
+                    <div id="lnbArea">
                         <ul class="lnb clearfix">
                             <li><a href="#">Login</a></li>
                             <li><a href="#">Join</a></li>
@@ -20,7 +29,7 @@
                         </ul>
                     </div>
                 </div>
-                <div id="logo">하이미디어</div>
+                <div id="logo"><a href="#">하이미디어</a></div>
                 <nav>
                     <ul class="gnb clearfix">
                         <li><a href="#">회사소개</a></li>
@@ -32,6 +41,23 @@
                     </ul>
                 </nav>
             </header>
+            <div class="visual">
+                <ul class="slider">
+                    <li><img src="../images/pc01.jpg" alt=""></li>
+                    <li><img src="../images/pc02.jpg" alt=""></li>
+                    <li><img src="../images/pc03.jpg" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="container clearfix">
+                <aside class="aside">aside</aside>
+                <section class="section">section</section>
+            </div>
+            <footer>
+                <div class="footer">
+                    FOOTER
+                </div>
+            </footer>
         </div>            
     </body>
 </html>
