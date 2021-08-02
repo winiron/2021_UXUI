@@ -21,7 +21,6 @@ header #topArea #lnbArea .lnb {
 }
 header #topArea #lnbArea .lnb li {
     float: left;
-
 }
 header #topArea #lnbArea .lnb li a {
     display: inline-block;
