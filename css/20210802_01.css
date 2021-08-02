@@ -1,0 +1,9 @@
+.box {
+    width:1000px;
+    background-color:skyblue;
+}
+
+li {
+    background-color:orange; 
+    float:left;
+}
