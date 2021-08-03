@@ -2,12 +2,13 @@
     width:100%;
 }
 
-/* 헤더영역 (#wrap>header) */
+/* header */
 #wrap header {
     width:100%;  height:148px;
 }
 
-/* 탑메뉴 영역 (#wrap>header>#topArea) */
+/* top 영역*/
+
 #wrap header #topArea {
     width:100%; height:28px;
     border-bottom:1px solid lightgrey;
@@ -16,14 +17,14 @@
     width:980px;
     margin:0 auto;
 }
-#wrap #header #topArea #lnbArea .lnb {
+#wrap header #topArea #lnbArea .lnb {
     width:auto;
     float: right;
 }
-#wrap #header #topArea #lnbArea .lnb li {
+#wrap header #topArea #lnbArea .lnb li {
     float: left;
 }
-#wrap #header #topArea #lnbArea .lnb li a {
+#wrap header #topArea #lnbArea .lnb li a {
     display: inline-block;
     color: #888888;
     padding-left:14px;
@@ -34,136 +35,84 @@
     text-align:center;
     border-right:1px solid #dddddd;
 }
-#wrap #header #topArea #lnbArea .lnb li a:hover { 
+#wrap header #topArea #lnbArea .lnb li a:hover { 
     color: #43484e;
 }
-/* 로고 영역 (#wrap>header>#logoArea) */
-#wrap #header #logoArea {
+
+/* logo 영역 */
+
+header #logo{
     width:100%; height:75px; 
     font-size:1.5rem; font-weight:bold; text-align:center; line-height:74px;    
 }
 
-/* 메인 메뉴 영역 (#wrap>#header/#gnbArea) */
+/* GNB 영역 */
 
-#wrap #header #gnbArea {
+header nav {
     width:100%;
     background-color:#1d5da4;
 }
-#wrap #header #gnbArea .gnb {
+header nav .gnb {
     width:980px; 
     margin:0 auto;
     background-color:#1d5da4;
 }
-#wrap #header #gnbArea .gnb li {
+header nav .gnb li {
     float: left;
     width:calc(980px/6);
     border-left:1px solid #336dac;
 }
-#wrap #header #gnbArea .gnb li a:hover {
+header nav .gnb li a:hover {
     background-color:#092c52;
 }
-#wrap #header #gnbArea .gnb li:last-child {
+header nav .gnb li:last-child {
     border-right:1px solid #336dac;
 }
-#wrap #header #gnbArea .gnb li a {
+header nav .gnb li a {
     display:inline-block;
     width:100%; height: 45px;
     color:white; text-align: center; line-height:45px;
 }
 
-/* 메인 배너 영역 (#wrap>#visualArea) */
+/* 비주얼 영역 */
 
-#wrap #visualArea {
-    width:100%; height:400px;
-    background-color:#4d4d4d;
-    text-align: center;
-    font-size:2rem; line-height:400px;
-    color:lightgrey;
+.visual {
+   width:1000px;
+margin: 0 auto;
 }
 
-/* 서브 배너 영역 (#wrap>#bannerArea) */
+/* 컨테이너 영역 */
 
-#wrap #bannerArea {
-    width:100%; height:200px;
-    background-color:#eeeeee;
-}
-#wrap #bannerArea #banner {
-    width:980px; height:100%;
-    margin: 0 auto;
-}
-#wrap #bannerArea #banner li {
-    float:left;
-}
-#wrap #bannerArea #banner li:nth-child(1) {
-    background-color:#7c99b9;
-}
-#wrap #bannerArea #banner li:nth-child(2) {
-    background-color:#4f74a1;
-}
-#wrap #bannerArea #banner li:nth-child(3) {
-    background-color:#4b8ce0;
-}
-#wrap #bannerArea #banner li:nth-child(4) {
-    background-color:#3db5f2;
-}
-#wrap #bannerArea #banner li:nth-child(5) {
-    background-color:#95c8ff;
-}
-#wrap #bannerArea #banner li a {
-    display:block;
-    width:calc(980px/5); height:200px;
-}
-
-/* 컨테이너 영역 (#wrap>#contaniner) */
-
-#wrap #contaniner {
-    width:100%; 
-    padding-top:50px;
-    padding-bottom:50px;
-    padding-right:0;  
-}
-#wrap #contaniner #contaninerArea {
-    width:980px; height:auto;
+.container {
+    width:980px;
     margin:0 auto;
-} 
-/* 컨테이너1 영역 (#wrap>#contaniner>#contaninerBanner01) */
-#wrap #contaniner #contaninerArea #contaninerBanner01 li {
-    float:left;
-    width: calc(930px/3); height:286px;
-    border:1px solid #ccc;
-    margin-right:25px;
+    text-align: center;
 }
-#wrap #contaniner #contaninerArea #contaninerBanner01 li:last-child,
-#wrap #contaniner #contaninerArea #contaninerBanner02 li:last-child  {
-    margin-right:0;
-}
-/* 컨테이너2 영역 (#wrap>#contaniner>#contaninerBanner02) */
-#wrap #contaniner #contaninerArea #contaninerBanner02 li {
+.container .aside {
     float:left;
-    width: calc(930px/3); height:162px;
-    border:1px solid #ccc;
-    margin-right:25px;
-    margin-top:25px;
+    width: 29%;
+    background-color:red;
+    line-height:500px;
+ }
+.container .section { 
+    float:right;
+    width: 70%;
+    background-color:green;
+    line-height:500px;
 }
 
-/* 푸터 영역 (#wrap>#footer) */
+/* 푸터 영역 */
 
-#wrap #footer {
+footer {
     width:100%; 
     background-color: #ccc;
 }
-/* 개인정보 영역 (#wrap>#footer>#personal) */
-#wrap #footer #personalInfo {
-    width:100%; height:44px;
-    background-color:#4D4D4D;
-}
-#wrap #footer #personalInfo .area {
-    width:980px; height:100%;
-    background-color:red;
+
+footer .footer {
+    width:980px; height:200px;
     margin:0 auto;
-}
-/* 회사정보 영역 (#wrap>#footer>#personal) */
-#wrap #footer #companyInfo {
-    width:100%; height:104px;
-    background-color:#5E5E5E;
+    background-color:#4d4d4d;
+    text-align: center;
+    line-height:200px;
+    font-size:2rem;
 }

@@ -6,10 +6,11 @@
         <title>Document</title>
         <link href="/css/reset.css" type="text/css" rel="stylesheet">
         <link href="/css/20210802_02.css" type="text/css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet" />        
     </head>
     <body>
         <div id="wrap">
-            <header id="header">
+            <header>
                 <div id="topArea" > 
                     <div id="lnbArea">
                         <ul class="lnb clearfix">
@@ -20,8 +21,8 @@
                         </ul>
                     </div>
                 </div>
-                <div id="logoArea"><a href="#">하이미디어</a></div>
-                <nav id="gnbArea">
+                <div id="logo"><a href="#">하이미디어</a></div>
+                <nav>
                     <ul class="gnb clearfix">
                         <li><a href="#">회사소개</a></li>
                         <li><a href="#">제품소개</a></li>
@@ -32,49 +33,31 @@
                     </ul>
                 </nav>
             </header>
-            <div id="visualArea">
-                VISUAL STDIO
+            <div class="visual">
+                <ul class="slider">
+                    <li><img src="../images/pc01.jpg" alt=""></li>
+                    <li><img src="../images/pc02.jpg" alt=""></li>
+                    <li><img src="../images/pc03.jpg" alt=""></li>
+                </ul>
             </div>
-            <div id="bannerArea">
-                <ul id ="banner" class="clearfix">
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                    <li><a href="#"></a></li>
-                </ul> 
+
+            <div class="container clearfix">
+                <aside class="aside">aside</aside>
+                <section class="section">section</section>
             </div>
-            <div id="contaniner">
-                <section id="contaninerArea">
-                   <ul id="contaninerBanner01" class="clearfix">
-                       <li></li>
-                       <li></li>
-                       <li></li>
-                   </ul>
-                   <ul id="contaninerBanner02" class="clearfix">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </section>
-            </div>
-            <footer id="footer">
-                <div id="personalInfo">
-                    <div class="area">
-
-                    </div>
-                </div>
-                <div id="companyInfo">
-                    <div class="area">
-                        <div class="logo">
-
-                        </div>
-                        <div class="text">
-
-                        </div>
-                    </div>
+            <footer>
+                <div class="footer">
+                    FOOTER
                 </div>
             </footer>
-        </div>            
+        </div> 
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.slider').bxSlider();
+            });
+        </script>         
     </body>
 </html>
