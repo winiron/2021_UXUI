@@ -1,1 +1,32 @@
 @charset "utf-8";
+
+div {
+    display:flex;
+    justify-content:center; align-items:center;
+}
+.box1 {
+    width: 100px; height: 100px;
+    background-color: #f00;
+    position: absolute; left:50%; 
+    margin-left:-50px;
+}
+.box2 {
+    width: 100px; height: 100px;
+    background-color:orange;
+    position: absolute; right: 0; top: 50%;
+    margin-top:-50px;
+}
+
+.box3 {
+    width: 100px; height: 100px;
+    background-color:cornflowerblue;
+    position: absolute; left: 0; bottom: 50%;
+    margin-bottom:-50px;
+}
+
+.box4 {
+    width: 100px; height: 100px;
+    background-color:skyblue;
+    position: absolute; right: 50%; bottom:0;
+    margin-right:-50px;
+}
