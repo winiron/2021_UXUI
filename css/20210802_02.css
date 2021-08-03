@@ -120,23 +120,23 @@
     width:100%; 
     padding-top:50px;
     padding-bottom:50px;
+    padding-right:0;
     
 }
 #wrap #contaniner #bannerArea {
-    width:980px; height:600px;
-    background-color:#336dac;
-    margin:0 auto;
+    width:980px; height:auto;
+    /* margin:0 auto; */
 } 
-#wrap #contaniner #bannerArea #banner01 {
-    display:flex;
-    justify-content:space-between;
-
-}
 #wrap #contaniner #bannerArea #banner01 li {
     float:left;
-    width:308px; height:286px;
-    background-color:red;
+    width: calc(930px/3); height:286px;
+    border:1px solid #888888;
+    margin-right:25px;
 }
+#wrap #contaniner #bannerArea #banner01 li:last-child {
+    margin-right:0;
+}
+
 
 /* 푸터 영역 (#wrap>#footerArea) */
 
