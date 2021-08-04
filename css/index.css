@@ -191,6 +191,33 @@
     margin-right:25px;
     margin-top:25px;
 }
+#wrap #contaniner #contaninerArea #contaninerBanner02 li .text {
+    float:left;
+    width:50%;
+    padding:10px;
+}
+#wrap #contaniner #contaninerArea #contaninerBanner02 li .img {
+    float:left;
+    width:50%;
+    overflow: hidden;
+}
+#wrap #contaniner #contaninerArea #contaninerBanner02 li .text .title {
+    font-size: 18px;
+    margin-bottom:13px;
+}
+#wrap #contaniner #contaninerArea #contaninerBanner02 li .text .content {
+    font-size: 13px; color: #888888;
+    margin-bottom:10px;
+}
+#wrap #contaniner #contaninerArea #contaninerBanner02 li .text .btn {
+    font-size:14px; color:#092c52;
+}
+#wrap #contaniner #contaninerArea #contaninerBanner02 li .text .btn span{
+    font-size:10px;
+}
+
+
+
 
 /* 푸터 영역 (#wrap>#footer) */
 
