@@ -69,24 +69,32 @@
 
 /* 메인 배너 영역 (#wrap>#visualArea) */
 
-#wrap #visualArea {
+#wrap #visual {
     width:100%; height:400px;
-    background-color:#4d4d4d;
-    color:white;
+    background: url(../images/main_bg01.jpg) no-repeat;
+    overflow: hidden;
+   
+}
+#wrap #visual .area {
+    width:980px;
+    margin:0 auto;
     position: relative;
 }
-#wrap #visualArea .text {
-    position: absolute; left:20%; top:20px;
+#wrap #visual .area .text {
+    position: absolute; left:0; top:70px;
+    color: white;
 }
-#wrap #visualArea .text .title {
+#wrap #visual .area .text .title {
     font-size:4rem;
     line-height:4.4rem;
     margin-bottom:30px;
 }
-#wrap #visualArea .text .contents {
+#wrap #visual .area .text .contents {
     margin-bottom:30px;
 }
-
+#wrap #visual .area img {
+    position:absolute; right:0; top:0;
+}
 
 
 .visualAnker li{
@@ -102,12 +110,6 @@
     width:60px; height: 4px;
 }
 
-
-
-
-
-
-
 /* 서브 배너 영역 (#wrap>#bannerArea) */
 
 #wrap #bannerArea {
@@ -118,27 +120,26 @@
     width:980px; height:100%;
     margin: 0 auto;
 }
-#wrap #bannerArea #banner li {
-    float:left;
-}
-#wrap #bannerArea #banner li:nth-child(1) {
-    background-color:#7c99b9;
-}
-#wrap #bannerArea #banner li:nth-child(2) {
-    background-color:#4f74a1;
-}
-#wrap #bannerArea #banner li:nth-child(3) {
-    background-color:#4b8ce0;
-}
-#wrap #bannerArea #banner li:nth-child(4) {
-    background-color:#3db5f2;
-}
-#wrap #bannerArea #banner li:nth-child(5) {
-    background-color:#95c8ff;
-}
+#wrap #bannerArea #banner li { float:left; }
+#wrap #bannerArea #banner li:nth-child(1) { background-color:#7c99b9; }
+#wrap #bannerArea #banner li:nth-child(2) { background-color:#4f74a1; }
+#wrap #bannerArea #banner li:nth-child(3) { background-color:#4b8ce0; }
+#wrap #bannerArea #banner li:nth-child(4) { background-color:#3db5f2; }
+#wrap #bannerArea #banner li:nth-child(5) { background-color:#95c8ff; }
 #wrap #bannerArea #banner li a {
     display:block;
     width:calc(980px/5); height:200px;
+}
+#wrap #bannerArea #banner li a .img {
+    text-align: center;
+    padding-top:15px;
+}
+#wrap #bannerArea #banner li a .text { padding: 10px; }
+#wrap #bannerArea #banner li a .text .title {
+    color:white; font-size:18px; font-weight: 500; text-align: center;
+}
+#wrap #bannerArea #banner li a .text .content {
+    color:white; font-size:12px; text-align: center;
 }
 
 /* 컨테이너 영역 (#wrap>#contaniner) */
@@ -226,6 +227,11 @@
     position: absolute; left:0; top:0;
     padding-top:30px;
 }
+.companyInfologo a{
+    display: block;
+    color: white;
+}
+
 address {
     position: absolute; left:180px;
 }
