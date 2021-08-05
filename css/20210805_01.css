@@ -54,7 +54,7 @@ body { font-family: 'Roboto', sans-serif; }
     width: 980px;
     margin: 0 auto;
 }
-.navWrap .gnb li{
+#header .navWrap .gnb li{
     float:left; 
     width: calc(100%/6);
     border-right: 1px solid #336dac;
@@ -71,5 +71,5 @@ body { font-family: 'Roboto', sans-serif; }
     font-weight: bold;
 }
 .navWrap .gnb li a:hover {
-    background-color: rgb(12, 12, 95);
+    background-color:#0a1e50;
 }
