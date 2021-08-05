@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* header */
+
+#header { }
+#header .topWrap { 
+    border-bottom:1px solid #DDDDDD;
+}
+#header .topWrap .top{ 
+    width: 980px;
+    margin: 0 auto;
+}
+.util {
+    float:right;
+}
+.util ul {
+    
+}
+.util ul li {
+    float: left;
+}
+.util ul li a{
+    display: block;
+    text-align: center;
+    line-height:26px;
+    padding:5px 8px;
+    color:#888888;
+    font-size:14px;
+}
