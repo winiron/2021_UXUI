@@ -73,3 +73,26 @@ body { font-family: 'Roboto', sans-serif; }
 .navWrap .gnb li a:hover {
     background-color:#0a1e50;
 }
+
+/* visual Area */
+#visualWrap {
+    height: 400px;
+    background:url(../images/main_bg01.jpg) no-repeat center;
+    overflow: hidden;
+}
+#visual {
+    width:980px;
+    margin:0 auto;
+    position:relative;
+}
+#visual .visualTxt {
+    position: absolute; top:120px;
+    font-size:79px;
+    font-weight: bold;
+    line-height:92px;
+    letter-spacing:0.085rem;
+    color:white;
+}
+#visual img {
+    position: absolute; right: 0;
+}
