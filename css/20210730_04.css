@@ -12,3 +12,11 @@
     background-color: green;
     float: right;
 }            
+
+
+
+
+/*common*/
+.bgGray {
+    background-color:#ccc  !important;
+}
