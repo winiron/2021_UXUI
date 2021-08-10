@@ -6,7 +6,7 @@
         <title>20210810 bxSlider</title>
         <link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet">
         <link href="css/reset.css" type="text/css" rel="stylesheet">
-        
+        <link href="css/style.css" type="text/css" rel="stylesheet">
         <!-- jQuery file : script:src-->
         <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>  
         <script type="text/javascript" src="js/jquery.bxslider.js"></script>  
@@ -20,29 +20,15 @@
                     controls:false,
                     auto:true
                 }); // slider
+                $('.slide1st').bxSlider({
+                    pager:false,
+                    auto:true,
+                    controls:false
+                });// slide1st
+
+
             }); // jquery ready
         </script>
-        <style>
-            .sliderWrap{width: 1000px;margin: 0 auto;}
-            /* .slide li img{width: 100%;} */
-            .bx-wrapper {
-                -moz-box-shadow:0 none;
-                -webkit-box-shadow:0 none;
-                box-shadow:0 none;
-                border: 0 none;
-                margin-bottom: 0;
-            }
-            .bx-wrapper .bx-pager { bottom: 30px;}
-            .bx-wrapper .bx-pager.bx-default-pager a {background:white }
-            .bx-wrapper .bx-pager.bx-default-pager a:hover { background:orange; }
-            .bx-wrapper .bx-pager.bx-default-pager a.active,
-            .bx-wrapper .bx-pager.bx-default-pager a:focus {  background:red; }
-            .container { 
-                height:400px; 
-                background: skyblue; 
-            }
-
-        </style>
     </head>
     <body>
         <div class="sliderWrap">
@@ -53,8 +39,15 @@
             </ul>
         </div>
         <div class="container">
-
         </div>
-
+        <div class="slide1stWrap">
+            <div class="slide1st">
+                <div><img src="images/pic_1.jpg" alt="img1"></div>
+                <div><img src="images/pic_2.jpg" alt="img2"></div>
+                <div><img src="images/pic_3.jpg" alt="img3"></div>
+                <div><img src="images/pic_4.jpg" alt="img4"></div>
+                <div><img src="images/pic_5.jpg" alt="img5"></div>
+            </div>
+        </div>
     </body>
 </html>
