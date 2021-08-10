@@ -15,10 +15,42 @@
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {  background:red; }
 .container { 
-    height:400px; 
+    height:200px; 
     background: skyblue; 
 }
 
 .slide1stWrap {
     width: 640px;
 }
+
+
+.slide2stWrap {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/* 사용자 페이징 위치와 모양을 자유롭게 변형 */
+.menu {
+    display:flex;
+    position: absolute; bottom:10px;
+}
+.menu li {
+    width:calc(1000px/3); 
+}
+   
+.menu a {
+    display:block;
+    height:50px;
+    background-color: rgba(0, 0, 0, 0.67);
+    color:white;
+    text-align: center;
+    line-height:50px;
+}
+.menu a:hover, .menu a:active{
+    background-color:red;
+}
+
+/* 엑티브상태에 대한 속성값 지정 */
+.menu a.active{ background:orange; color:white;}

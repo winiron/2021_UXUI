@@ -25,7 +25,12 @@
                     auto:true,
                     controls:false
                 });// slide1st
-
+                $('.slide2st').bxSlider({
+                    mode:"fade",
+                    auto:true,
+                    controls:false,
+                    pagerCustom: '.menu'
+                });// slide1st
 
             }); // jquery ready
         </script>
@@ -38,8 +43,7 @@
                 <li><img src="images/pc03.jpg" alt="img3"></li>
             </ul>
         </div>
-        <div class="container">
-        </div>
+        <div class="container"></div>
         <div class="slide1stWrap">
             <div class="slide1st">
                 <div><img src="images/pic_1.jpg" alt="img1"></div>
@@ -48,6 +52,19 @@
                 <div><img src="images/pic_4.jpg" alt="img4"></div>
                 <div><img src="images/pic_5.jpg" alt="img5"></div>
             </div>
+        </div>
+        <div class="container"></div>
+        <div class="slide2stWrap">
+            <div class="slide2st">
+                <div><img src="images/pc01.jpg" alt="img1"></div>
+                <div><img src="images/pc02.jpg" alt="img2"></div>
+                <div><img src="images/pc03.jpg" alt="img3"></div>
+            </div>
+            <ul class="menu">
+                <li><a data-slide-index="0" href="#">manu1</a></li>
+                <li><a data-slide-index="1" href="#">manu2</a></li>
+                <li><a data-slide-index="2" href="#">manu3</a></li>
+            </ul>
         </div>
     </body>
 </html>
