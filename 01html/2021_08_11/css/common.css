@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+
+.backColor1 { background: skyblue; }
+.backColor2 {
+    background: url(/images/pc01.jpg) no-repeat center;
+    background-size:cover;background-attachment: fixed;
+}
+
+.boxShadow { box-shadow:5px 5px 10px rgba(0,0,0,0.3); }
+
+.line:after{
+    content:"";display: block;width: 100px;height: 2px;
+    background: #000;margin: 8px auto;
+}
+
+.marginBottom05 { margin-bottom:0.5rem; }
+.marginBottom1 { margin-bottom:1rem;}
+
+.paddingTop2 {padding-top: 2rem;}
+.paddingBottom2 { padding-bottom: 2rem; }
+
+.textAlign { text-align: center; }
+
+.textShadow { text-shadow:0 0 10px rgba(255,255,255,1); }
