@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.bx-wrapper {
+    -moz-box-shadow:0 none;
+    -webkit-box-shadow:0 none;
+    box-shadow:0 none;
+    border: 0 none;
+    margin-bottom: 0;
+}
+
+.sliderWrap {
+    width: 1240px;
+    margin:0 auto;
+    position: relative;
+}
+
+/* 텍스트 관련 */
+.txt {
+    position: absolute; right:130px; top:100px;
+    width: 400px;
+}
+.txt h2 {
+    font-size:1.8rem;
+    margin-bottom:5px;
+}
+.txt h2::after {
+    content: "";
+    width: 50px; height: 4px;
+    background-color: black;
+    display: block;
+    position: absolute; top:-10px;
+    border-radius:2px;
+}
+.txt p { margin-bottom: 30px;}
+
+.txt .btn {
+    display: block;
+    width: 150px;
+    text-align: center;
+    border:1px solid #000;
+    line-height:35px;
+    font-size: 12px;
+    border-radius:28px;
+    transition:0.3s;
+}
+.txt .btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+
+
