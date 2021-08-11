@@ -20,3 +20,5 @@ a:visited { color:black}
 
 /*common*/
 .bgGray { background-color:#ccc  !important; }
+
+img {display: block;}
