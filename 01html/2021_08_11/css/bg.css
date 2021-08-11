@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.box1, .box2, .box3 {
+    height:100vh;
+    display:flex; justify-content: enter; align-items:center;
+}
+
+.box1{
+    background-color: skyblue;
+    background-image: url(/images/pc01.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.box2{
+    background: url(/images/pc02.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.box3{
+    background: url(/images/pc03.jpg) no-repeat center fixed;
+    background-size: cover;
+}
