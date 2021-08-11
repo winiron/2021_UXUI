@@ -4,49 +4,64 @@
     -moz-box-shadow:0 none;
     -webkit-box-shadow:0 none;
     box-shadow:0 none;
-    border: 0 none;
-    margin-bottom: 0;
+    border:0 none;
+    margin-bottom:0;
 }
 
-.sliderWrap {
-    width: 1240px;
+.sliderWrap { 
+    position:relative;
+    width:1240px;
     margin:0 auto;
-    position: relative;
 }
-
-/* 텍스트 관련 */
-.txt {
-    position: absolute; right:130px; top:100px;
-    width: 400px;
+.sliderWrap .slider .txt{
+    position:absolute; right:130px; top:100px;
+    width:400px;
 }
-.txt h2 {
+.txt h2{
+    position:relative;
     font-size:1.8rem;
-    margin-bottom:5px;
+    margin-bottom:15px;
 }
-.txt h2::after {
-    content: "";
-    width: 50px; height: 4px;
-    background-color: black;
+.txt h2:after{
+    content:"";
+    display:block;
+    position:absolute; top:-10px;
+    width:50px; height:4px;
+    background:#000;
+    border-radius:2px
+}
+.txt p { margin-bottom:30px; }
+.txt .btn{
+    display:block;
+    width:150px;
+    font-size:12px; text-align:center; line-height:35px;
+    border:1px solid #000; border-radius:28px;
+    transition:0.3s
+}
+.txt a.btn:hover { 
+    background:#000;
+    color:white; 
+}
+.sliderPager {
+    position:absolute; top:0;
+    width:300px; height:728px;
+}
+.sliderPager .bxPager {
+    height:100%;
+    background:#000;
+}
+.sliderPager .bxPager a{
+    /* float: left; */
+    /* width: calc( 100% / 4); */
     display: block;
-    position: absolute; top:-10px;
-    border-radius:2px;
+    height:25%;
+    display:flex; justify-content:center; align-items:center; /* 텍스트 정렬 */
+    text-align:center; line-height: 40px;
+    background:skyblue;
 }
-.txt p { margin-bottom: 30px;}
-
-.txt .btn {
-    display: block;
-    width: 150px;
-    text-align: center;
-    border:1px solid #000;
-    line-height:35px;
-    font-size: 12px;
-    border-radius:28px;
-    transition:0.3s;
+.sliderPager .bxPager a.active { 
+    background:pink; 
 }
-.txt .btn:hover {
-    background-color: #000;
-    color: white;
+.sliderPager .bxPager a:hover { 
+    background:red; 
 }
-
-
-
