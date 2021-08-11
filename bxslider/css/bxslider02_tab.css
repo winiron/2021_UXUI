@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.sliderWrap {
+    width: 1240px;
+    margin:0 auto;
+    position: relative;
+}
+.txt {
+    position: absolute; right:130px; top:100px;
+    width: 400px;
+}
+.txt h2 {
+    font-size:1.8rem;
+    margin-bottom:5px;
+}
+.txt h2::after {
+    content: "";
+    width: 50px; height: 4px;
+    background-color: black;
+    display: block;
+    position: absolute; top:-10px;
+    border-radius:2px;
+}
+.txt p { margin-bottom: 30px;}
+
+.txt .btn {
+    display: block;
+    width: 150px;
+    text-align: center;
+    border:1px solid #000;
+    line-height:35px;
+    font-size: 12px;
+    border-radius:28px;
+    transition:0.3s;
+}
+.txt .btn:hover {
+    background-color: #000;
+    color: white;
+}
+
+.bx-pager {
+    position: absolute; bottom:0;
+    width: 100%;
+}
+.bx-pager a {
+    display: block;
+    float: left;
+    background:rgba(0, 0, 0, 0.7);
+    color:white;
+    width: calc(100% / 3);
+    height: 40px;
+    text-align: center;
+    line-height:40px;
+}
+.bx-pager a:active, .bx-pager a:hover {
+    background:rgba(0, 0, 0, 0.9);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>20210811수업</title>
+        <link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet">
+        <link href="css/reset.css" type="text/css" rel="stylesheet">
+        <link href="css/bxslider01.css" type="text/css" rel="stylesheet">
+        <!-- jQuery file : script:src-->
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>  
+        <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+    </head>
+    <body>
+        <div class="sliderWrap">
+            <ul class="slider">
+                <li><img src="images/pc01.jpg" alt="img1"></li>
+                <li><img src="images/pc02.jpg" alt="img2"></li>
+                <li><img src="images/pc03.jpg" alt="img3"></li>
+            </ul>
+            <div class="nextBtn">
+                <img src="images/btn_right.png" alt="nextBtn">
+            </div>
+            <div class="prevBtn">
+                <img src="images/btn_left.png" alt="prevBtn">
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                var mySlide = $('.slider').bxSlider({controls:false});
+                // $('.nextBtn').click(function(){});
+                $('.nextBtn').click(function(){
+                    mySlide.goToNextSlide();//bxSlider public method option
+                });
+                $('.prevBtn').click(function(){
+                    mySlide.goToPrevSlide();//bxSlider public method option
+                });
+            });
+        </script>  
+    </body>
+</html>

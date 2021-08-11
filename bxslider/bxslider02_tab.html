@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>20210811_01수업</title>
+        <link href="css/jquery.bxslider.css" type="text/css" rel="stylesheet">
+        <link href="css/reset.css" type="text/css" rel="stylesheet">
+        <link href="css/bxslider02_tab.css" type="text/css" rel="stylesheet">
+       <!-- jQuery file : script:src-->
+       <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>  
+       <script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+    </head>
+
+<body>
+    <div class="sliderWrap">
+        <ul class="slider">
+            <li>
+                <img src="images/main_slider01.jpg"alt="img1">
+                <div class="txt">
+                    <h2>사랑과 행복을 나누는 마음1</h2>
+                    <P>
+                        사랑과 행복을 함께 나누는 마음으로 
+                        평화복지재단이 지역사회 복지사업에 앞장서겠습니다.
+                        많은 관심과 응원을 바랍니다.
+                    </P>
+                    <a href="#" class="btn">바로가기</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/main_slider01.jpg"alt="img1">
+                <div class="txt">
+                    <h2>사랑과 행복을 나누는 마음2</h2>
+                    <P>
+                        사랑과 행복을 함께 나누는 마음으로 
+                        평화복지재단이 지역사회 복지사업에 앞장서겠습니다.
+                        많은 관심과 응원을 바랍니다.
+                    </P>
+                    <a href="#" class="btn">바로가기</a>
+                </div>
+            </li>
+            <li>
+                <img src="images/main_slider01.jpg"alt="img1">
+                <div class="txt">
+                    <h2>사랑과 행복을 나누는 마음3</h2>
+                    <P>
+                        사랑과 행복을 함께 나누는 마음으로 
+                        평화복지재단이 지역사회 복지사업에 앞장서겠습니다.
+                        많은 관심과 응원을 바랍니다.
+                    </P>
+                    <a href="#" class="btn">바로가기</a>
+                </div>
+            </li>
+        </ul>
+        <div class="bx-pager clearfix">
+            <a href="#" data-slide-index="0">사랑과 행복을 나누는 마음1</a>
+            <a href="#" data-slide-index="1">사랑과 행복을 나누는 마음2</a>
+            <a href="#" data-slide-index="2">사랑과 행복을 나누는 마음3</a>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                pagerCustom: '.bx-pager'
+            });
+        });
+    </script>
+</body>
+</html>
