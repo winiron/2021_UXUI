@@ -43,3 +43,11 @@ header .gnb li:nth-child(4):hover { background-position: 0 -500px; }
 header .gnb li:nth-child(5):hover { background-position: 0 -550px; }
 header .gnb li:nth-child(6):hover { background-position: 0 -600px; }
 header .gnb li:nth-child(7):hover { background-position: 0 -650px; }
+
+header .gnb li:nth-child(1).active { background-position: 0 -350px; }
+header .gnb li:nth-child(2).active { background-position: 0 -400px; }
+header .gnb li:nth-child(3).active { background-position: 0 -450px; }
+header .gnb li:nth-child(4).active { background-position: 0 -500px; }
+header .gnb li:nth-child(5).active { background-position: 0 -550px; }
+header .gnb li:nth-child(6).active { background-position: 0 -600px; }
+header .gnb li:nth-child(7).active { background-position: 0 -650px; }
