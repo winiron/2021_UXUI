@@ -6,14 +6,14 @@
     _background-color: skyblue;
 }
 .nav ul li {
-    float: left;
-    width: 140px; height: 50px;
-    background-image: url(../../images/sprites.png);
-    background-repeat: no-repeat;
+    float:left;
+    width:140px; height:50px;
+    background-image:url(../../images/sprites.png);
+    background-repeat:no-repeat;
 }
 
 .nav ul li a {
-    display: block;
+    display:block;
     height:50px;
     text-indent:-9999px;
 }
