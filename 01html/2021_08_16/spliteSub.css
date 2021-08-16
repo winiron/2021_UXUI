@@ -1,3 +1,44 @@
 @charset "UTF-8";
 
-.active 
+header {
+    margin-bottom:20px;
+}
+
+.subMainVisual {
+    width: 980px;
+    margin:0 auto;
+    display: block;
+    width: 100%; height: 100%;
+    font-size:2rem;
+    display:flex; justify-content:center; align-items:center;
+    text-align: center;
+}
+
+.title {
+    width: 980px; height:100px;
+    margin:0 auto;
+    display:flex; justify-content:center; align-items:center;
+}
+
+section {
+    width: 980px; 
+    margin:20px auto;
+}
+.sub01Visual ul li {
+    float:left;
+    width: 50%; height:200px;
+}
+.sub01Visual ul li a {
+    width: 100%; height: 100%;
+    color:white; font-size:1.2rem;
+    display:flex; justify-content:center; align-items:center;
+}
+.sub01Visual ul li:nth-child(2) a { color: black;}
+
+.bgcRed1 { background-color:red; }
+.bgcOrange2 { background-color:orange; }
+.bgcYellow3 { background-color:yellow;}
+.bgcGreen4 { background-color:green; }
+.bgcBlue5 { background-color:blue; }
+.bgcIndego6 { background-color:Indigo; }
+.bgcPurple7 { background-color:purple; }
