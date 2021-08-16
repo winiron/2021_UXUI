@@ -36,13 +36,13 @@ header .gnb li:nth-child(5) { background-position: 0 -200px; }
 header .gnb li:nth-child(6) { background-position: 0 -250px; }
 header .gnb li:nth-child(7) { background-position: 0 -300px; }
 
-header .gnb li:nth-child(1):hover { background-position: 0 -350px; }
+/* header .gnb li:nth-child(1):hover { background-position: 0 -350px; }
 header .gnb li:nth-child(2):hover { background-position: 0 -400px; }
 header .gnb li:nth-child(3):hover { background-position: 0 -450px; }
 header .gnb li:nth-child(4):hover { background-position: 0 -500px; }
 header .gnb li:nth-child(5):hover { background-position: 0 -550px; }
 header .gnb li:nth-child(6):hover { background-position: 0 -600px; }
-header .gnb li:nth-child(7):hover { background-position: 0 -650px; }
+header .gnb li:nth-child(7):hover { background-position: 0 -650px; } */
 
 header .gnb li:nth-child(1).active { background-position: 0 -350px; }
 header .gnb li:nth-child(2).active { background-position: 0 -400px; }
