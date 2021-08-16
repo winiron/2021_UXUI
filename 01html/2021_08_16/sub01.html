@@ -5,17 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>이미지 스프라이트(Image Sprite)</title>
         <link href="/css/reset.css" type="text/css" rel="stylesheet">
-        <link href="bxslider01.css" type="text/css" rel="stylesheet">
         <link href="style.css" type="text/css" rel="stylesheet">
-
-        <script src="js/jquery-3.1.1.min.js"></script>
-        <script src="js/jquery.bxslider.js"></script>
     </head>
     <body>
         <h1><a href="index.html">네이버</a></h1>
         <div class="nav clearfix">
             <ul>
-                <li><a href="sub01.html">menu1</a></li>
+                <li class="active"><a href="sub01.html">menu1</a></li>
                 <li><a href="sub02.html">menu2</a></li>
                 <li><a href="#">menu3</a></li>
                 <li><a href="#">menu4</a></li>
@@ -24,18 +20,6 @@
                 <li><a href="#">menu7</a></li>
             </ul>
         </div>
-        <div class="visual">
-            <ul class="slide">
-                <li><img src="../../images/pc01.jpg" alt=""></li>
-                <li><img src="../../images/pc02.jpg" alt=""></li>
-                <li><img src="../../images/pc03.jpg" alt=""></li>
-            </ul>
-        
-            <script>
-                $(document).ready(function(){
-                    $('.slide').bxSlider();
-                });
-            </script>
-        </div>
+
     </body>
 </html>
