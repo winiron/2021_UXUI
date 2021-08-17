@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form 요소</title>
+        <link href="/css/reset.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <form action="welcom.jsp" method="get">
+            <fieldset>
+                <legend>ID/PASSWORD</legend>
+                <label for="id">ID</label><input type="text" id="id" name="id" placeholder="Please enter your ID." required><br>
+                <label for="pw">PASSWORD</label><input type="password" id="pw" name="pw" placeholder="Please enter your password." required>
+            </fieldset>
+            <fieldset>
+                <legend>Detailed information</legend>
+                <label for="s">축구</label><input type="checkbox" id="s" name="s" value="축구">
+                <label for="b">야구</label><input type="checkbox" id="b" name="b" value="야구" checked>
+                <br>
+                <label for="m">남자</label><input type="radio" id="m" name="se" value="남자" checked>
+                <label for="f">여자</label><input type="radio" id="f" name="se" value="여자">
+                <br>
+                <label for="text">Additional input</label>
+                <br>
+                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                <br>
+                <label for="sel">Choose</label>
+                <select name="fruit" id="sel">
+                    <option value="사과">사과</option>
+                    <option value="수박">수박</option>
+                    <option value="딸기" selected>딸기</option>
+                </select>
+            </fieldset>
+            <br>
+            <input type="submit" value="자료 전송"><input type="reset" value="새로 고침">
+
+        </form>
+    </body>
+</html>
