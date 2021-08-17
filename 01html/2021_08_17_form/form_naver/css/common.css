@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+.blind {
+    display: block;
+    position: absolute; left: 0; top:-9999px;
+}
+fieldset {
+    border:1px solid #dadada;
+    background-color: white;
+}
+/* #content>.join>form>fieldset>.field>.icon */
+.icon {
+    display:block;
+    width: 97px; height: 48px;
+    position: absolute; right: 10px; top: 0;
+    background-image: url(../images/ico_join3.png);
+    background-repeat: no-repeat;
+    background-position: 0 -47px;
+    text-indent:-9999px;
+}
+/* #content>.join>form>fieldset>.field>.inp-field */
+.inp-field {
+    width: 350px; height: 49px;
+    border: 0 none;
+    font-size:16px; text-indent:12px;
+}
