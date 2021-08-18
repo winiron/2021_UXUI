@@ -13,3 +13,11 @@
     border:0 none;
     font-size:16px; text-indent:12px;
 }
+
+.field.none {
+    border-bottom: 0 none !important;
+}
+
+.w458 {
+    width:458px !important;
+}

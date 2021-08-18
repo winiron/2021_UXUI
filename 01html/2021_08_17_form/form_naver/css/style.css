@@ -30,9 +30,11 @@ body {
 #content .join form fieldset {
     border:1px solid #dadada;
     background-color:white;
+    margin-bottom:10px;
 }
 #content .join form fieldset .field {
     position:relative;
+    border-bottom: 1px solid #f0f0f0;
 }
 #content .join form fieldset .field .icon {
     display:block;
@@ -40,7 +42,6 @@ body {
     position:absolute; right: 10px; top: 0;
     background-image:url(../images/ico_join3.png);
     background-repeat:no-repeat;
-    background-position:0 -47px;
     text-indent:-9999px;
 }
 #content .join form fieldset .field .icon.email { 
@@ -51,4 +52,34 @@ body {
 }
 #content .join form fieldset .field .icon.pass2 { 
     background-position: 0 -516px; 
+}
+
+p.radio>input:nth-child(1):checked ~ label.male {
+   background-color:skyblue !important;
+}
+p.radio>input:nth-child(2):checked ~ label.female {
+    background-color:skyblue !important;
+}
+
+.field.radio {
+    height: 50px;
+}
+.field.radio input {
+    position:absolute; left:20px; top: 20px;
+}
+.btn-label {
+    display:block;
+    width:212px; height:31px;
+    line-height:31px; text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius:5px;
+    position:absolute; top:10px; 
+    background:#fff;
+    cursor: pointer;
+}
+.btn-label.male {
+    left: 15px;
+}
+.btn-label.female {
+    right: 15px;
 }
