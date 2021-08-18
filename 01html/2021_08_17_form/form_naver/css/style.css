@@ -61,6 +61,7 @@ p.radio>input:nth-child(2):checked ~ label.female {
     background-color:skyblue !important;
 }
 
+/* 개인정보 영역 */
 .field.radio {
     height: 50px;
 }
@@ -82,4 +83,33 @@ p.radio>input:nth-child(2):checked ~ label.female {
 }
 .btn-label.female {
     right: 15px;
+}
+
+/* 생년월일 영역 */
+.birth label {
+    float: left;
+    width: 53px; height: 49px; line-height: 49px;
+    text-align:center;
+    background-color: #f7f7f7;
+    color: #757575;
+    border-right: 1px solid #f0f0f0;
+}
+.birth input {
+    float: left;
+}
+.birth .field-wall {
+    float: left;
+    width: 0; height: 29px;
+    border-right:1px solid #f0f0f0;
+    margin-top: 10px;
+    text-indent: -9999px;
+}
+.birth select {
+    float: left;
+    width: 110px; height: 29px;
+    border:0 none;
+    line-height:29px;
+    margin-top:10px; margin-left: 7px;
+    font-size: 15px;
+    color:#757575;
 }
