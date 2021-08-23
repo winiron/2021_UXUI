@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+#wrap {
+    width:1600px;
+    margin:0 auto;
+    border:1px solid black;
+}
+
+h1 {
+    text-align: center;
+    padding:20px;
+}
+
+#tableOne {
+    border:1px solid black;
+    width: 90%;
+    margin:0 auto;
+    margin-bottom:20px;
+    border-collapse: collapse;
+}
+
+
+
+#tableOne td {
+    height:50px;
+    border:1px solid black;
+    text-align: center;
+    
+}
+
+#tableOne .td12, #tableOne .td14,
+#tableOne .td22, #tableOne .td24,
+#tableOne .td32, #tableOne .td34,
+#tableOne .td42 {
+    background-color: lightgray;
+}

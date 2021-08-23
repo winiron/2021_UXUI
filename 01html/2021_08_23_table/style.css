@@ -75,3 +75,7 @@ table.sample1 tfoot tr {
     text-align: center;
     background:#222;
 }
+
+table.sample2 {
+    width: 1200px;
+}

@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+* {
+    margin:0;padding: 0;
+    box-sizing: border-box;
+}
+.inp {
+    border:0 none;
+    padding:10px;
+    font-size:18px; color:#333; line-height:24px;
+}
+.underline {
+    border-bottom:3px solid #000;
+}
+.round {
+    border:3px solid #999; border-radius:25px;
+    text-indent:10px;
+}
+
+/* 버튼 스타일 작업 */
+input[type="submit"] {
+    width:50px; height:50px;
+    position:absolute; top:69px; left:234px;
+    border:0 none; border-radius:50%;
+    background:orange;
+    cursor:pointer;
+}
+div.radio > input:nth-child(1):checked ~ label.male {
+    background:skyblue;
+}
+div.radio > input:nth-child(2):checked ~ label.female {
+    background:orange;
+}
+
+.box1 {
+    width:270px;
+    border:3px solid #999;
+    padding:10px;
+    font-size:18px;
+}
