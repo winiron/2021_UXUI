@@ -4,13 +4,52 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>RADIO</title>
+        <style>
+            * {
+                margin: 0; padding: 0;
+                box-sizing: border-box;
+            }
+            .inp {
+                border:0 none; border-bottom:3px solid black;
+                padding:10px;  
+                font-size:18px; color:#333;
+            }
+            .underline {
+                border-bottom:3px soild #000;
+            }
+            .round {
+                border:3px soild red;
+                border-radius:25px;
+                text-indent:25px;
+                padding:10px; 
+            }
+            div.radio > input:nth-child(1):checked ~ label.male {
+                background:skyblue;
+            }
+            div.radio > input:nth-child(2):checked ~ label.female {
+                background: orange;
+            }
+        </style>
     </head>
     <body>
         <div class="box">
             <form action="test.php" method="POST">
-                <input type="text" name="userName">
+                <label for="userNa">이름</label>
+                <input type="text" name="userName" id="userNa" class="inp underline" placeholder="이름" required><br><br>
+                <label for="userNa1">성명</label>
+                <input type="text" name="userName1" id="userNa1" class="round" placeholder="이름" required><br><br>
+
                 <input type="submit" value="전송하기">
+                <br><br>
+
+                <div class="radio">
+                    <input type="radio" id="radio1st" name="user" value="m" checked>
+                    <input type="radio" id="radio2st" name="user" value="w">
+                    <label for="radio1st" class="male">남자</label>
+                    <label for="radio2st" class="female">여자</label>   
+                </div>
             </form>
         </div>
+
     </body>
 </html>
