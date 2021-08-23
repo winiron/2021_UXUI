@@ -93,17 +93,17 @@ p.radio>input:nth-child(2):checked ~ label.female {
     color: #757575;
     border-right: 1px solid #f0f0f0;
 }
-.birth input {
+.birth input, .confirm input {
     float: left;
 }
-.birth .field-wall {
+.birth .field-wall, .confirm .field-wall {
     float: left;
     width: 0; height: 29px;
     border-right:1px solid #f0f0f0;
     margin-top: 10px;
     text-indent: -9999px;
 }
-.birth select {
+.birth select,  .confirm select {
     float: left;
     width: 110px; height: 29px;
     border:0 none;
@@ -112,3 +112,32 @@ p.radio>input:nth-child(2):checked ~ label.female {
     font-size: 15px;
     color:#757575;
 }
+
+.btn-click {
+    position: absolute; right: 15px; top: 9.5px;
+    width: 99px; height:31px;
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+}
+
+
+
+.btn-submit {
+    width:100%; height:59px;
+    border: 1px solid #1fbc02;
+    background-image: url(../images/btn_join2.gif);
+    background-repeat: no-repeat;
+    background-color: #1fbc02;
+    background-position:50% -3px;
+    text-indent:-9999px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
