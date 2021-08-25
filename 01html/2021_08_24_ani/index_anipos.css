@@ -7,10 +7,68 @@ body{
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
+    overflow-x:hidden;
 }
 
 #wrap {
-    position: absolute; left:50%; top:50%;
+    position: absolute; left:50%; top:50%; 
+    z-index: 1;
     /* transform:translateX(-50%) translateY(-50%); */
-    transform: translate(-50%, -50%) scale(1.5);
+    transform: translate(-50%, -50%); /*가운데 정렬*/
+}
+
+#wrap form {
+    position: relative;
+}
+
+input[type="text"]:focus{
+    outline:none;
+}
+.searchInp {
+    width: 400px; height: 50px;
+    border-radius:25px;
+    border:2px solid #000;
+    font-size:18px;
+    text-indent:90px;
+    /* box-shadow: 5px 5px 0 #000, -5px -5px 0 #f00; */
+}
+.searchTitle {
+    display: block;
+    position: absolute; top: 50%; left:20px;
+    transform: translateY(-50%);
+    width: 60px; height: 20px;
+    background:url(images/searchtext.jpg);
+    text-indent:-9999px;
+}
+.searchBtn {
+    position: absolute; right: 10px; top: 50%;
+    transform: translateY(-50%);
+    width: 40px; height: 40px;
+    background: url(images/search.jpg) no-repeat center;
+    border:1px solid #aaa; border-radius: 50%;
+    text-indent:-9999px;
+}
+.bal {
+    position: absolute; top:-200px; right:-100px;
+    animation-name: bal;
+    animation-duration:5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+@keyframes bal {
+    /* form { top:-200px; } */
+    to { top:-220px;  }
+}
+.air {
+    position: absolute; bottom: 0; left: 0;
+    animation-name:air;
+    animation-duration:3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count:infinite;
+}
+@keyframes air {
+    form { bottom: 0; left: 0; transform:scale(0.5);}
+    to { bottom: 1500px; left: 1800px;  transform:scale(2);}
 }

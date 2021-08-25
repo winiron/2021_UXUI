@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.backGroundColor { 
+    background:#dde4e8 !important;  
+}
+.marginBottom_2rem { 
+    margin-bottom: 2rem !important; 
+}
+.paddingTop_2rem { 
+    padding-top: 2rem !important; 
+}
+.paddingBottom_2rem { 
+    padding-bottom: 2rem !important; 
+}
+.padding_2rem {
+    padding:2rem 0 !important;
+}
