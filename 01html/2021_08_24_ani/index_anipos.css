@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* html, body { height:100%; }  배경 높이값*/
+body{
+    height:100vh; /*이미지 한 화면에 full*/
+    background-image:url(images/bg02.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+
+#wrap {
+    position: absolute; left:50%; top:50%;
+    /* transform:translateX(-50%) translateY(-50%); */
+    transform: translate(-50%, -50%) scale(1.5);
+}
