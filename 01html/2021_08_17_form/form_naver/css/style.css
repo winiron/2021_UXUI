@@ -121,8 +121,7 @@ p.radio>input:nth-child(2):checked ~ label.female {
     cursor: pointer;
 }
 
-
-
+/* 가입하기 버튼 */
 .btn-submit {
     width:100%; height:59px;
     border: 1px solid #1fbc02;
@@ -131,13 +130,5 @@ p.radio>input:nth-child(2):checked ~ label.female {
     background-color: #1fbc02;
     background-position:50% -3px;
     text-indent:-9999px;
-    cursor: pointer;
+    cursor:pointer;
 }
-
-
-
-
-
-
-
-

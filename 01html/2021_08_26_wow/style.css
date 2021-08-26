@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+h1{
+    width: 100px;height: 100px;background: orange;
+    /* position: absolute;left: 50%;top: 50%;
+    margin-left: -50px;margin-top: -50px; */
+
+  }
+  .container{width: 1000px;margin: 0 auto;}
+  .test1 li{
+      float: left;width:calc( (100% - 40px) / 5);
+      background: skyblue;margin-right: 10px;
+      height: 150px;
+      display: flex;justify-content: center;align-items: center;
+      border-radius:10px
+  }
+  .test1 li:last-child{margin-right: 0;}
+
+  .mb2{margin-bottom: 2em;}
