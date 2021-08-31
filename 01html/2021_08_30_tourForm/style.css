@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+fieldset {
+    border:0;
+}
+.blend {
+    display: block;
+    position: absolute; left: 0; top: -9999px;
+}
+.form {
+    width: 350px; height: 300px; 
+   background-color: antiquewhite;
+   padding:10px 35px;
+   position: absolute; left: 400px;; top: 500px;
+}
+.form label {
+    display: block;
+    padding:5px 0;
+}
+.form select {
+    width: 100%; height: 40px;
+    font-size:1rem;
+    border-radius:5px;
+    text-indent:10px;
+}
+
+.form .left, 
+.form .right {
+    width:calc(( 100% - 10px) / 2); 
+    float: left;
+}
+.form .left {
+    margin-right:10px;
+}
+.form .left input,
+.form .right input {
+    width: 100%; 
+    height: 40px; font-size: 1rem; 
+    border-radius:5px;
+    text-indent:10px;
+}
