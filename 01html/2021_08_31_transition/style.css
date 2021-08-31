@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+.box1{
+    width:233px;height: 240px;
+    position: relative;
+    transition:0.3s;
+    overflow:hidden;
+    background:skyblue;
+    border:10px solid skyblue;
+    margin:0 auto;
+    cursor: pointer;
+}
+.box1:hover{
+    border:30px solid skyblue;
+}
+
+.box1 img {
+    position:absolute; left: 50%;top: 50%;
+    transform:translate(-50%,-50%) scale(1);
+    transition:0.3s;
+}
+.box1:hover img {
+    transform:translate(-50%,-50%) scale(1.1);
+}
+.box1 .bg {
+    position:relative;
+    width:100%;height:100%; background: #f00;
+    opacity:0;
+    transition:0.3s
+}
+.box1:hover .bg{
+    opacity:0.1;
+}
+.box1 .circle {
+    width:50px; height:50px;
+    position:absolute; left:50%;top:50%;
+    transform:translate(-50%,-50%);
+    border:4px solid #fff;
+    border-radius:50%;
+    transition:0.3s;
+}
+.box1:hover .circle {
+    transform:translate(-50%,-50%) rotate(90deg)
+}
+
+
+.box2 {
+    width:233px;height: 240px;
+    position: relative;
+    transition:0.3s;
+    overflow:hidden;
+    background:skyblue;
+    border:10px solid skyblue;
+    margin:0 auto;
+    cursor: pointer;
+}
+.box2:hover {
+    border:30px solid skyblue;
+}
+
+.box2 img {
+    position:absolute; left: 50%;top: 50%;
+    transform:translate(-50%,-50%) scale(1);
+    transition:0.3s;
+}
+.box2:hover img {
+    transform:translate(-50%,-50%) scale(1.1);
+}
+.box2 .bg {
+    position:relative;
+    width:100%;height:100%; background: #f00;
+    opacity:0;
+    transition:0.3s
+}
+.box2:hover .bg{
+    opacity:0.1;
+}
+.box2 .circle {
+    width:50px; height:50px;
+    position:absolute; left:50%;top:50%;
+    transform:translate(-50%,-50%);
+    border:4px solid #fff;
+    border-radius:50%;
+    /* animation-name:ani; */
+    animation-duration:0.3s;
+}
+@keyframes ani {
+    from{transform:translate(-50%,-50%)}
+    to{transform:translate(-50%,-50%) rotate(90deg)}
+}
+.box2:hover .circle {
+    animation-name:ani;
+}
+
+
+
+
+.circle .bar2,
+.circle .bar1 {
+    width: 30px;height: 4px;background: #fff;position: absolute;
+    border-radius:2px;left: 50%;top: 50%;transform:translate(-50%,-50%)
+}
+
+.circle .bar1 { transform:translate(-50%,-50%) rotate(90deg) }
