@@ -12,6 +12,8 @@
     border-radius:3px;
     position: absolute; left: 50%; top: 50%;
     transform:translate(-50%, -50%);
+    transition:0.3s;
+    cursor: pointer;
 }  
 .toggleMenu .bar1 {
     top:11px;

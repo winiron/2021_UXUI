@@ -21,7 +21,18 @@
             <div class="bar3"></div>
         </div>
 
+        <a href="http://www.naver" target="_blank" class="link">NAVER</a>
+
         <!-- 자바스크립트 영역 -->
-        
+        <script>
+            $(".toggleMenu").click(function(){
+                if($(".toggleMenu").attr("class") == "toggleMenu") {
+                    $(".toggleMenu").addClass("active");
+                } else {
+                    $(".toggleMenu").removeClass("active");
+                }                
+            });
+
+        </script>
     </body>
 </html>
