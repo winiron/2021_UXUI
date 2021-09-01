@@ -27,6 +27,7 @@
         <script>
             
             $(".toggleMenu").click(function(){
+                console.log($(".toggleMenu").attr("class"));
                 if($(".toggleMenu").attr("class") == "toggleMenu") {
                     $(".toggleMenu").addClass("active");
                 } else {
