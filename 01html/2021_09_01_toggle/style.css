@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.toggleMenu {
+    width: 50px; height: 50px;
+    border:1px solid #000;
+    position: relative;
+}
+
+.toggleMenu  div {
+    width: 34px; height: 5px;
+    background:black;
+    border-radius:3px;
+    position: absolute; left: 50%; top: 50%;
+    transform:translate(-50%, -50%);
+}  
+.toggleMenu .bar1 {
+    top:11px;
+}
+.toggleMenu .bar3 {
+    top:37px;
+}
+.toggleMenu.active .bar1 {
+    transform: translate(-50%, -50%) rotate(45deg);
+    top:50%;
+} 
+.toggleMenu.active .bar2 {
+    opacity:0;
+}
+.toggleMenu.active .bar3 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top:50%;   
+}  

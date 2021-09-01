@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <style>
+        .box {
+            width: 100px; height: 100px;
+            background-color:skyblue;
+            display: flex; justify-content: center; align-items: center;
+            border-radius:50%;
+            cursor: pointer;
+        }
+        .bus {
+            font-size:3rem;
+            color:white
+        }
+        .box:hover { background-color: blue; }
+        .box:hover .bus { color:skyblue; }
+
+        .box.active { background-color: blue; }
+        .box.active .bus { color:skyblue; }
+    </style>
+    <body>
+        <div class="box">
+            <i class="fas fa-bus bus"></i>
+        </div>
+        <div class="box active">
+            <i class="fas fa-car bus"></i>
+        </div>        
+    </body>
+</html>
