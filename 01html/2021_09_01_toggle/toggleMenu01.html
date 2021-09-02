@@ -13,6 +13,38 @@
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
-        </div>   
+        </div>
+    
+        <div class="topMenu">
+            <nav class="topNav">
+                <a href="#">여행도시 <span>Travel city</span></a>
+                <a href="#">호텔예약 <span>Hotel reservation</span></a>
+                <a href="#">렌트카 <span>Hotel reservation</span></a>
+                <a href="#">여행 팁 <span>Rental cars</span></a>
+                <a href="#">회사소개 <span>Company introduction</span></a>
+                <a href="#">커뮤니티 <span>Community</span></a>
+            </nav>
+        </div>
+
+        
+        <script>
+            $(".toggleMenu").click(function(){
+                // console.log($(".toggleMenu").attr("class"));    
+                
+                //3항 연산자
+                // ($(".toggleMenu").attr("class") == "toggleMenu") 
+                // ? $(".toggleMenu").addClass("active") 
+                // : $(".toggleMenu").removeClass("active");
+
+                //if else문
+                if( $(".toggleMenu").attr("class") == "toggleMenu" ){
+                    $(".toggleMenu").addClass("active");
+                    $(".topMenu").stop().animate({opacity:"1"},300);
+                }else{
+                    $(".toggleMenu").removeClass("active");
+                    $(".topMenu").stop().animate({opacity:"0"},300);
+                }            
+            });
+        </script>
     </body>
 </html>
