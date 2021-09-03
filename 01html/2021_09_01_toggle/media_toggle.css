@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+html,body { height: 100%; }
+
+.menuWrap { background-color: #333; }
+.menuWrap a { color:white; }
+
+.menuWrap h1 { 
+    width: 100px; line-height:50px; 
+    text-align: center;
+    padding-left: 16px;
+}
+.myTopMenu { 
+    position: absolute; left:120px; top:0;
+}
+.myTopMenu a {
+    display: block;
+    float: left;
+    padding:14px 10px;
+}
+.toggleMenu {
+    width: 50px; height: 50px;
+    position:absolute; right: 16px; top: 0px;
+    display:none;
+}
+.toggleMenu div {
+    width: 34px; height: 5px;
+   background-color: #fff;
+    border-radius:3px;
+    position: absolute; left:50%; top:50%;
+    transform:translate(-50%, -50%);
+}
+.toggleMenu .bar1 { top:14px; }
+.toggleMenu .bar3 { top:36px; }
+
+.toggleMenu.active .bar1 { 
+    top:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
+}
+.toggleMenu.active .bar2 { opacity:0;}
+.toggleMenu.active .bar3 { 
+    top:50%;
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+
+@media screen and (min-width:900px) {
+    body { background-color:skyblue; }
+}
+
+@media screen and (min-width:600px) and (max-width:899px) {
+    body { background-color:orange; }
+}
+
+@media screen and (max-width:599px) {
+    .toggleMenu { display:block;}
+    .myTopMenu { display:none;}
+}
