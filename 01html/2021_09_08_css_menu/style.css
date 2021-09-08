@@ -1,1 +1,41 @@
 @charset "UTF-8";
+
+.gnb {
+    width:1000px;
+    position:fixed; left:0; right:0;
+    margin:0 auto;
+    /* left:50%; transform:translateX(-50%); */ /* 가운데정렬 */
+}
+.gnb .mainMenu > li {
+    float:left;
+    width:calc(100% / 4);
+    background-color:skyblue;
+}
+.gnb .mainMenu > li > a {
+    display: block;
+    line-height:40px;
+    text-align: center;
+}
+
+.gnb .mainMenu > li:hover { background-color:blue; }
+.gnb .mainMenu > li:hover a { color:white; }
+
+/* .gnb .mainMenu > li:nth-child(1) .subMenu { display:block; } */
+/* .gnb .mainMenu > li:hover .subMenu { display: block; } */
+/* 개별 서브 메뉴 출력 */
+/* .gnb .mainMenu >li:hover .subMenu { display: block; } */
+
+
+/* 서브메뉴 영역 */
+.subMenu { display: none; }
+.gnb .mainMenu:hover .subMenu { display: block; }/* 전체 서브 메뉴 출력 */
+.subMenu a {
+    display: block;
+    line-height:30px;
+    text-align: center;
+    font-size:12px;
+}
+.subMenu li:hover { background-color:orange; }
+.visual {
+    width:100%; height:1000px; background-color:brown;
+}
