@@ -6,9 +6,9 @@
 .gnb { 
     width:1200px;
     margin:0 auto;
-    position:relative;
-    z-index:1; 
+    position:relative; z-index:1; 
 }
+
 .gnb .mainMenu > li {
     width:calc(100% / 4);
     float:left;
@@ -19,19 +19,36 @@
 .gnb .mainMenu > li > a {
     display:block;
     line-height: 40px; text-align: center;
+    position: relative; z-index:1;
+    background:red;
 }
 .gnb .mainMenu > li:hover {
     background:red;
 }
-.gnb .mainMenu > li:first-child .subMenu { display: block; }
+/* .gnb .mainMenu > li:first-child .subMenu { display: block; } */
+
+
 
 
 /* mainMenu 영역 작업 */
 .subMenu {
-    display: none;
-    width:100%;
-    position:absolute;
-    background:red;
+    position:absolute; top:-200%;
+    width: 100%;
+    background-color:red;
+    transition: 0.3s;
+}
+
+.gnb:hover .mainMenu > li > .subMenu {
+    top:40px;
+}
+
+.subMenu a {
+    text-align: center; display: block;
+    line-height:30px;
+    font-size:14px;
+}
+.subMenu a:hover {
+    background-color:pink;
 }
 
 /* bxSilder settting */
