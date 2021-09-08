@@ -1,7 +1,5 @@
 @charset "UTF-8";
 
-
-
 /* mainMenu 영역 작업 */
 .gnb { 
     width:1200px;
@@ -33,9 +31,9 @@
 /* mainMenu 영역 작업 */
 .subMenu {
     position:absolute; top:-200%;
-    width: 100%;
+    width:100%;
     background-color:red;
-    transition: 0.3s;
+    transition:0.3s;
 }
 
 .gnb:hover .mainMenu > li > .subMenu {
@@ -43,7 +41,7 @@
 }
 
 .subMenu a {
-    text-align: center; display: block;
+    text-align:center; display:block;
     line-height:30px;
     font-size:14px;
 }
@@ -57,6 +55,6 @@
     -moz-box-shadow:0 none;
     -webkit-box-shadow:0 none;
     box-shadow:0 none;
-    border: 0 none;
-    margin-bottom: 0;
+    border:0 none;
+    margin-bottom:0;
 }
