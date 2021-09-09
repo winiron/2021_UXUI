@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.subMenu { display: none; }
+.gnb { 
+    width: 1000px; margin:0 auto;  
+    background-image: linear-gradient(120deg, #30cfd0 0%, #330867 100%);
+    border-radius:5px;
+    position: relative;
+}
+.gnb>.mainMenu>li { float: left; width:calc(100% / 5); transition:0.3s;}
+.gnb>.mainMenu>li:hover  {
+    background:skyblue;
+}
+.gnb>.mainMenu>li>a { 
+    display: block; 
+    color:white; font-size:18px; text-align:center; line-height:100px; font-weight:bold;
+}
+
+.gnb>.mainMenu>li:first-child .subMenu { display: block; }
+
+.subMenu { position: absolute; }
