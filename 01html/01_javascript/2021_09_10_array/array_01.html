@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>array</title>
+    </head>
+    <body>
+
+        국어 : <span id="sub1">0</span>점<br>
+        영어 : <span id="sub2">0</span>점<br>
+        수학 : <span id="sub3">0</span>점<br>
+        과학 : <span id="sub4">0</span>점<br>
+        사회 : <span id="sub5">0</span>점<br>
+        합계 : <span id="total">0</span>점<br>
+        평균 : <span id="avg">0</span>점<br>
+
+
+        <!-- Js영역 -->
+        <script>
+            const name = "Hong Gil Dong";
+            const city = ["seoul", "busan", "daego", "daejung", "inchun"];
+            const kimJumsu = ["Kim",80,50,40,30,90];
+            const leeJumsu = ["Lee",80,50,40,30,90];
+
+
+            for(let i=0; i<city.length ; i++) {
+                document.write(`${i+1}. 도시명 : ${city[i]} <br>`);
+            }
+            let sum = 0;
+            for(let i=0; i<kimJumsu.length; i++) { 
+                sum = sum + kimJumsu[i];
+            }
+            document.write(`평균 : ${sum/kimJumsu.length} <br>`);
+
+            document.getElementById("sub1").innerHTML = kimJumsu[0];
+            document.getElementById("sub2").innerHTML = kimJumsu[1];
+            document.getElementById("sub3").innerHTML = kimJumsu[2];
+            document.getElementById("sub4").innerHTML = kimJumsu[3];
+            document.getElementById("sub5").innerHTML = kimJumsu[4];
+            document.getElementById("total").innerHTML = sum;
+            document.getElementById("avg").innerHTML = sum/kimJumsu.length;
+        </script>
+    </body>
+</html>
