@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>array</title>
+        <link rel="shortcut icon" href="#">
+        <style>
+            .box { background-color: skyblue; }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <button onclick="print()">자료 넣기</button>
+            
+        
+        <!-- Js영역 -->
+        <script>
+            // const cityArr =[];
+            const city = new Array("seoul","busan","daegu");
+            function print(){
+                let print ="";
+                for(let i=0; i<city.length; i++) {
+                    // document.write(city[i]+"<br>");
+                    print = print + city[i];
+                }
+                // document.write(print);
+                document.getElementsByClassName("box")[0].innerHTML = print;
+            }
+            // print();  
+        </script>
+    </body>
+</html>
