@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>array</title>
+        <link rel="shortcut icon" href="#">
+        <style>
+            .box { 
+                height:100px; width:600px;
+                margin:0 auto;
+                display:flex; justify-content: center; align-items: center; 
+                border:3px solid black;
+                margin-bottom: 20px;
+
+            }
+            button { 
+                display: block;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <button onclick="print()">도시</button> -->
+
+
+        <!-- Js영역 -->
+        <script>
+            const arrData = [];
+            let sum = 0; // 총합을 저장하는 변수
+            for(let i=0; i<= 99 ; i++) {
+                arrData[i] = i + 1;
+            }
+            for(let i=0; i<arrData.length; i++) {
+                document.write(arrData[i] +" ");
+            }
+            for(let i=0; i<arrData.length; i++){
+                // sum = sum + arrData[i];
+                sum += arrData[i];
+            }
+            document.write("["+sum+"]");
+        </script>
+        
+    </body>
+
+</html>

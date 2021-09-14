@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>array</title>
+        <link rel="shortcut icon" href="#">
+        <style>
+            .box { 
+                height:100px; width:600px;
+                margin:0 auto;
+                display:flex; justify-content: center; align-items: center; 
+                border:3px solid black;
+                margin-bottom: 20px;
+
+            }
+            button { 
+                display: block;
+                margin: 0 auto;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <button onclick="print()">도시</button>
+
+
+        <!-- Js영역 -->
+        <script>
+            // const cityArr =[];
+            const printArr = new Array("SEOUL","BUSAN","DAEGU","DAEJUN","INCHUN","ULSAN");
+
+            function print() {
+                let sum ="";
+                for(let i=0; i<printArr.length; i++) {
+                    sum = sum + printArr[i] + " ";
+                }
+                // document.getElementsByClassName("box")[0].innerHTML = sum;
+                // document.querySelector(".box").innerHTML = sum;
+                // document.querySelectorAll(".box").innerHTML = sum;
+
+                const boxDiv = document.getElementsByClassName("box");
+                for(let i=0; i<boxDiv.length; i++){
+                   boxDiv[i].innerHTML = sum;
+                }
+
+            }
+        </script>
+        
+    </body>
+
+</html>
