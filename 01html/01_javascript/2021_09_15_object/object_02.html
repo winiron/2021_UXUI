@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>object</title>
+        <link rel="shortcut icon" href="#">
         <link rel="stylesheet" href="reset.css">
         <style>
             .table li { float:left;  margin-right:10px;}
@@ -13,15 +14,34 @@
     <body>
         <!-- javaScript 영역  -->
         <script>
-            const mem = ["홍길동", "이순신", "김철수"];
+
+            const name = ["홍길동", "이순신", "김철수"];
             const kor = [80,50,30];
             const eng = [70,50,100];
 
-            for(let i=0; i<mem.length; i++) {
+            for(let i=0; i<name.length; i++) {
                 // document.write(mem[i]+"<br>");
-                document.write(`<ul class="table clearfix"><li>${mem[i]} : </li><li>${kor[i]}점</li><li>${eng[i]}점</li></ul>`);
+                document.write(
+                    `
+                    <ul class="table clearfix">
+                        <li>${name[i]} : </li>
+                        <li>${kor[i]}점</li>
+                        <li>${eng[i]}점</li>
+                    </ul>
+                    `
+                );
             }
-
+            let totalScore = "";
+            const student = [
+                {name:'hong', kor:80, eng:70},
+                {name:'lee', kor:50, eng:50},
+                {name:'kim', kor:30, eng:100}
+            ];
+            for(let i=0; i<student.length; i++) {
+                // memTotal = memTotal + mem1[i].name;
+                totalScore += student[i].name;
+            }
+            document.write(totalScore);
         </script>
     </body>
 </html>
