@@ -35,11 +35,18 @@
             const student = [
                 {name:'hong', kor:80, eng:70},
                 {name:'lee', kor:50, eng:50},
-                {name:'kim', kor:30, eng:100}
+                {name:'kim', kor:30, eng:100},
+                {name:'kang', kor:30, eng:80}
             ];
             for(let i=0; i<student.length; i++) {
                 // memTotal = memTotal + mem1[i].name;
-                totalScore += student[i].name;
+                totalScore += 
+                    `<ul class="table clearfix">
+                        <li>${student[i].name} : </li>
+                        <li>${student[i].eng}점</li>
+                        <li>${student[i].kor}점</li>
+                    </ul>`
+                ;
             }
             document.write(totalScore);
         </script>
