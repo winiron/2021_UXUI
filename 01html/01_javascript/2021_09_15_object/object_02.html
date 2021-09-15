@@ -6,19 +6,11 @@
         <title>object</title>
         <link rel="stylesheet" href="reset.css">
         <style>
-            .table li { float:left; }
+            .table li { float:left;  margin-right:10px;}
         </style>
  
     </head>
     <body>
-
-        car name : <span class="box1">미정</span><br>
-        car speed : <span class="box2">0</span>km/h<br>
-        car color : <span class="box3"></span><br>
-
-        <button onclick="carData()">자료1</button>
-
-
         <!-- javaScript 영역  -->
         <script>
             const mem = ["홍길동", "이순신", "김철수"];
@@ -27,7 +19,7 @@
 
             for(let i=0; i<mem.length; i++) {
                 // document.write(mem[i]+"<br>");
-                document.write(`<ul class="table clearfix"><li>${mem[i]}</li><li>${kor[i]}</li><li>${eng[i]}</li></ul>`);
+                document.write(`<ul class="table clearfix"><li>${mem[i]} : </li><li>${kor[i]}점</li><li>${eng[i]}점</li></ul>`);
             }
 
         </script>
