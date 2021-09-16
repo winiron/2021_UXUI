@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>dom(document object model)</title>
+    </head>
+    <body>
+        <p 
+        id="first" class="box"
+        style="color: blue; 
+        background-color: yellow;"
+        onclick="this.style.color='teal'">
+        이것은 <span style="color:red">문장입니다.</span>
+    </p>
+    <div class="btn">
+        <button onclick="change()">스타일 변경</button>
+        <input type="button" value="style" onclick="change()">
+        <a href="#" onclick="change()">스타일 변경</a>
+        <div onclick="change()">스타일 변경</div>
+    </div>
+
+    <button onclick="init()">초기화</button>
+
+
+    <script>
+        // document.getElementById("first").style.color = "red";
+        // // const pf = document.getElementById("first"); 
+        // // const pf = document.querySelector('#first');
+        // // const pf = document.getElementsByClassName('box')[0];
+        // // const pf = document.getElementsByTagName('p')[0];
+        // const pf = document.querySelector('#first span');
+        // // pf[0].style.background ="darkblue";
+        // pf.style.background ="darkblue";
+        const pf = document.querySelector('#first.box');
+        const pSf = document.querySelector('#first>span');
+        const sBtn = document.querySelector('.btn');
+
+        function change() {
+
+            pf.style.color ="green";
+            pf.style.fontSize ="20px";
+            pSf.style.display ="none";
+
+            document.querySelector("body").style.background ="black";
+            sBtn.style.display ="none"
+        }
+
+        function init() {
+            document.querySelector("body").style.background ="initial";
+            pf.style.color ="blue";
+            pSf.style.display ="initial";//초기화
+            pf.style.fontSize ="initial";//초기화
+            sBtn.style.display ="initial"//초기화
+        }
+    </script>
+    </body>
+</html>
