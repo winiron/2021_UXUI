@@ -36,17 +36,13 @@
             //span dom 구해서 => collection
             // const span = document.getElementsByTagName("span");
             const span = document.querySelectorAll(".box span");
+            const spanAll1 =  document.getElementsByClassName("box")[0].getElementsByTagName("span");
+            const spanAll2 = box[0].getElementsByTagName("span");
+            
             btn[0].addEventListener("click",function(){
-
                 for(let i=0; i<span.length; i++) {
-                    span[i].style.color ="blue"
+                    spanAll2[i].style.color ="blue"
                 }
-
-
-                // for(let i=0; i<4; i++){
-                //  "span[" + i + "].style.color= 'red'";
-                // }
-                // box[0].style.fontSize ="40px";
             });
 
             // btn[0].addEventListener("click",onBox);
