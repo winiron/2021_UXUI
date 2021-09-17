@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>event</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div class="box">Lorem, ipsum dolor sit <span>amet</span> consectetur adipisicing elit. <span> Voluptatibus</span>natus quidem  <span>neque</span>voluptates<span> deserunt</span>assumenda quaerat magni porro architecto praesentium!</div>
+        <button class="btn">클릭</button>
+
+        <!-- javaScript -->
+        <script>
+            // 버튼 class .btn [클릭] => 리스터 등록(.box의 폰트 색을 빨간색으로 변경)
+            const btn = document.getElementsByClassName("btn");
+            const box = document.getElementsByClassName("box");
+            const span = document.querySelectorAll("span");
+
+
+            //[2] 리스너를 프로퍼티(함수)로 등록
+            // btn[0].onclick = onBox;
+            // function onBox(){
+            //     box[0].style.color = "red";
+            // }
+
+            // btn[0].onclick = function(){
+            //     box[0].style.color = "red";
+            // }
+            
+            //[3] addEventLsitener() 메서드 활용 / 주 사용 
+            btn[0].addEventListener("click",function(){
+                span[0].style.color = "red";
+                span[1].style.color = "red";
+                span[2].style.color = "red";
+                span[3].style.color = "red";
+                // for(let i=0; i<4; i++){
+                //  "span[" + i + "].style.color= 'red'";
+                // }
+                // box[0].style.fontSize ="40px";
+            });
+
+            // btn[0].addEventListener("click",onBox);
+            // function onbox(){};
+
+
+            //jQuery
+            // $(".btn").click(function(){
+            //     $(".box").css("color","red");
+            // });
+
+        </script>
+    </body>
+</html>
