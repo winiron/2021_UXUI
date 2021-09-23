@@ -65,14 +65,17 @@
 
                 for(let i = 0; i<divBox.length; i++) {
                     divBox[i].style.left=0;
+                    // divBox[i].style.transitionDelay = "0." + i +"s";
+                    divBox[i].style.transitionDelay = `${i/10}s`;
                 }
                 divBox[1].style.backgroundColor="red";
             }
-            function out(){
+            function out() {
                 pSel.style.border ="initial";
                 pSel.style.backgroundColor = "initial";
                 pSel.style.padding = "initial";
                 divTxt[0].innerHTML = "마우스 아웃"
+
                 for(let i = 0; i<divBox.length; i++) {
                     divBox[i].style.left="-100%";
                 }
