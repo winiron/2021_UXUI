@@ -8,11 +8,22 @@
         <style>
             *{ margin:0; padding:0; }
             li { list-style: none; }
-            .tab { display:flex; }
+            .tab { display:flex;  margin-bottom:30px;}
             .tab > li { width: 100px; text-align: center; padding:10px 0;}
             .tab > li.on { background-color:skyblue; }
-            .box div { display:none; }
-            .box div.on{ display:block;}
+            .box div {
+                width: 500px; 
+                border:1px solid lightgray;
+                padding:10px;
+            }
+            .box { position: relative;}
+            .box div { opacity:0; }
+            .box div.on{ opacity:1; transition:1s; }
+            .box div:nth-child(0),
+            .box div:nth-child(1),
+            .box div:nth-child(2),
+            .box div:nth-child(3) { position: absolute; left: 0; top: 0;}
+
         </style>
     </head>
     <body>
@@ -35,10 +46,9 @@
         for(let j=0;j<tabList.length;j++){
             tabList[j].onclick = function() {
                 for(let i=0;i<tabList.length;i++){
-                tabList[i].classList.remove("on"); // addClass() removeClass("on")
-                divList[i].classList.remove("on");
+                    tabList[i].classList.remove("on"); // addClass() removeClass("on")
+                    divList[i].classList.remove("on");
                 }
-                //this.classList.add("on");
                 tabList[j].classList.add("on");
                 divList[j].classList.add("on");
             }
