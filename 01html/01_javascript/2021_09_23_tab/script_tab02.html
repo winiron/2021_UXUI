@@ -8,15 +8,15 @@
         <style>
             *{ margin:0; padding:0; }
             li { list-style: none; }
-            #tab { display:flex; }
-            #tab > li { width: 100px; text-align: center; padding:10px 0;}
-            #tab > li.on { background-color:skyblue; }
-            .box > div { display:none;}
-            .box > div.on { display: block;}
+            .tab { display:flex; }
+            .tab > li { width: 100px; text-align: center; padding:10px 0;}
+            .tab > li.on { background-color:skyblue; }
+            .box div { display:none; }
+            .box div.on{ display:block;}
         </style>
     </head>
     <body>
-        <ul id="tab">
+        <ul class="tab">
             <li class="on">tab01</li>
             <li>tab02</li>
             <li>tab03</li>
@@ -30,22 +30,19 @@
         </div>
         <!-- javaScript -->
         <script>
-            const tabList = document.querySelectorAll("#tab li");
-            const boxList = document.querySelectorAll(".box div");
-
-            for(let i=0; i<tabList.length; i++){
-                for (let j=0; j<tabList.length; j++){
-                    tabList[i].addEventListener("click",function() {
-                        if( i == j) {
-                            tabList[i].classList.add("on");
-                            boxList[i].classList.add("on");
-                        } else {
-                            tabList[j].classList.remove("on");
-                            boxList[j].classList.remove("on");
-                        }
-                    });
+        const tabList = document.querySelectorAll(".tab li");
+        const divList =  document.querySelectorAll(".box div");
+        for(let j=0;j<tabList.length;j++){
+            tabList[j].onclick = function() {
+                for(let i=0;i<tabList.length;i++){
+                tabList[i].classList.remove("on"); // addClass() removeClass("on")
+                divList[i].classList.remove("on");
                 }
+                //this.classList.add("on");
+                tabList[j].classList.add("on");
+                divList[j].classList.add("on");
             }
+        }
         </script>
     </body>
 </html>
