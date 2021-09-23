@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascript tab</title>
+        <style>
+            *{ margin:0; padding:0; }
+            li { list-style: none; }
+            #tab { display:flex; }
+            #tab > li { width: 100px; text-align: center; padding:10px 0;}
+            #tab > li.on { background-color:skyblue; }
+        </style>
+    </head>
+    <body>
+        <ul id="tab">
+            <li class="on">tab01</li>
+            <li>tab02</li>
+            <li>tab03</li>
+            <li>tab04</li>
+        </ul>
+        <!-- javaScript -->
+        <script>
+            const tabList = document.querySelectorAll("#tab li");
+
+            for(let i=0; i<tabList.length; i++){
+                for (let j=0; j<tabList.length; j++){
+                    tabList[i].addEventListener("click",function(){
+                        if( i == j) {
+                            tabList[i].classList.add("on");
+                        } else {
+                            tabList[j].classList.remove("on");
+                        }
+                    });
+                }
+            }
+
+        </script>
+    </body>
+</html>
