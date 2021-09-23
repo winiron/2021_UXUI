@@ -6,18 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>javascript tab</title>
         <style>
-            *{ margin:0; padding:0; }
             li { list-style: none; }
-            .tab { display:flex;  margin-bottom:30px;}
-            .tab > li { width: 100px; text-align: center; padding:10px 0;}
+            .tab {
+                width:90%; height: 50px;  margin:0 auto; 
+                display:flex; 
+                margin-bottom:30px; 
+            }
+            .tab > li { 
+                width: 25%; 
+                display:flex; justify-content: center; align-items: center; 
+                border-left: 1px solid lightgray;
+                border-bottom: 1px solid lightgray;
+                border-top: 1px solid lightgray;
+                cursor:pointer;
+            }
+            .tab > li:last-child { 
+                border-right:1px solid lightgray;
+            }
             .tab > li.on { background-color:skyblue; }
+            .box { width:80%; margin:0 auto; }
             .box div {
-                width: 500px; 
+                width:100%;
                 border:1px solid lightgray;
                 padding:10px;
             }
             .box { position: relative; }
-            .box div { opacity:0; }
+            .box div { opacity:0;  text-align:center;}
             .box div.on{ opacity:1; transition:1s; }
             .box div:nth-child(0),
             .box div:nth-child(1),
