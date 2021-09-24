@@ -10,6 +10,8 @@
             .tab { display:flex; }
             .tab li { padding:10px 20px; cursor: pointer;}
             .tab li.on { background-color: skyblue; }
+            .con p { display: none; }
+            .con p:first-child { display: block; }
         </style>
     </head>
     <body>
@@ -19,7 +21,13 @@
             <li>menu03</li>
             <li>menu04</li>
         </ul>
-        
+        <div class="con">
+            <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse ipsam sunt ab maxime atque expedita, consequuntur accusantium magnam praesentium temporibus eius tempore doloremque iure vel quae nisi illo itaque?</p>
+            <p>2. Vero recusandae minima blanditiis vitae explicabo harum aliquid odio. Veritatis, laudantium quia dolores dolorum cum nesciunt laboriosam fugiat ullam eius veniam doloribus architecto, maiores optio enim quos voluptas omnis sunt illum est vel delectus.</p>
+            <p>3. Fugit reiciendis molestias dolorem alias harum sunt saepe et incidunt? Exercitationem recusandae impedit, ut voluptatibus voluptas quaerat ipsam non, corrupti beatae maxime, hic similique odio eius.</p>
+            <p>4. Impedit maiores aspernatur cupiditate a nostrum voluptates dicta ratione obcaecati dignissimos beatae quidem, necessitatibus nobis, placeat enim laboriosam officiis voluptatum? In, minima!</p>
+        </div>
+
         <!-- 자바스크립트 영역 -->
         <script src="../js/jquery-3.1.1.min.js"></script>
         <script>
@@ -40,15 +48,37 @@
             //     $("ul>li").eq(3).addClass("on"); 
             // });
 
-            const index = $("ul > li").length
+            // const index = $("ul > li").length
             const txt = $("ul > li")
             
-            for(let i= 0; i<index; i++) { 
-                txt.eq(i).click(function(){
-                txt.removeClass();
-                txt.eq(i).addClass("on"); 
-                });
-            }
+            // for(let i= 0; i<index; i++) { 
+            //     txt.eq(i).click(function(){
+            //         txt.removeClass();
+            //         txt.eq(i).addClass("on"); 
+            //     });
+            // }
+
+            // txt.click(function(){
+            //     let num = $(this).index();
+            //     console.log($(this).index());//자긴 자신의 인덱스 값. ※ $(this).index()
+            //     txt.removeClass(); //요소 초기화
+            //     $(this).addClass("on");
+
+            //     $(".con > p").hide();
+            //     // $(".con > p").eq(num).show();
+            //     $(".con > p").eq(num).fadeIn();
+            // });
+
+            txt.click(function(){
+                let num = $(this).index();
+                console.log($(this).index());//자긴 자신의 인덱스 값. ※ $(this).index()
+                txt.removeClass(); //요소 초기화
+                $(this).toggleClass("on");
+
+                $(".con > p").hide();
+                // $(".con > p").eq(num).show();
+                $(".con > p").eq(num).fadeIn();
+            });
         </script>
     </body>
 </html>
