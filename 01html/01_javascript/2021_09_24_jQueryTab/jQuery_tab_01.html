@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>제이쿼리 탭 매뉴</title>
+        <link rel="stylesheet" href="../css/reset.css">
+        <style>
+            .tab { display:flex; }
+            .tab li { padding:10px 20px; cursor: pointer;}
+            .tab li.on { background-color: skyblue; }
+        </style>
+    </head>
+    <body>
+        <ul class="tab">
+            <li class="on">menu01</li>
+            <li>menu02</li>
+            <li>menu03</li>
+            <li>menu04</li>
+        </ul>
+        
+        <!-- 자바스크립트 영역 -->
+        <script src="../js/jquery-3.1.1.min.js"></script>
+        <script>
+            // $("ul > li").eq(0).click(function(){
+            //     $("ul>li").removeClass();
+            //     $("ul>li").eq(0).addClass("on"); 
+            // });
+            // $("ul > li").eq(1).click(function(){
+            //     $("ul>li").removeClass();
+            //     $("ul>li").eq(1).addClass("on"); 
+            // });
+            // $("ul > li").eq(2).click(function(){
+            //     $("ul>li").removeClass();
+            //     $("ul>li").eq(2).addClass("on"); 
+            // });
+            // $("ul > li").eq(3).click(function(){
+            //     $("ul>li").removeClass();
+            //     $("ul>li").eq(3).addClass("on"); 
+            // });
+
+            const index = $("ul > li").length
+            
+            for(let i= 0; i<index; i++){ 
+                $("ul > li").eq(i).click(function(){
+                $("ul>li").removeClass();
+                $("ul>li").eq(i).addClass("on"); 
+                });
+            }
+
+        </script>
+    </body>
+</html>
