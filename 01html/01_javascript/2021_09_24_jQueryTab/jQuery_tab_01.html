@@ -41,14 +41,14 @@
             // });
 
             const index = $("ul > li").length
+            const txt = $("ul > li")
             
             for(let i= 0; i<index; i++){ 
-                $("ul > li").eq(i).click(function(){
-                $("ul>li").removeClass();
-                $("ul>li").eq(i).addClass("on"); 
+                txt.eq(i).click(function(){
+                txt.removeClass();
+                txt.eq(i).addClass("on"); 
                 });
             }
-
         </script>
     </body>
 </html>
