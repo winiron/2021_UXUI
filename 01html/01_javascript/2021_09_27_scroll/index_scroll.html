@@ -6,21 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scroll</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <style>
-        body {height: 200vh; background-color: skyblue;}
-        .box { 
-            position:fixed; 
-            border:1px solid black;
-            padding:20px;
-            right:0;
-            background: white;
-        }
-        .menu { 
-            width:600px; height:100px;
-            background-color: crimson;
-            margin:10px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="box">
@@ -232,21 +218,6 @@
     </div>
 
     <!-- javaScript 작업 영역 -->
-    <script>
-        window.addEventListener("scroll",function(){
-            let scroll = window.pageYOffset;
-            let y = document.querySelector(".scroll");
-            const menu = document.querySelector(".menu");
-            y.innerHTML = scroll;
-
-            if (scroll > 300) {
-                menu.style.position = "fixed";
-                document.querySelector(".menu").style.top = "0";
-            } else {
-                menu.style.position = "absolute";
-                menu.style.top = "20px";
-            }
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
