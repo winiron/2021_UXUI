@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+    <style>
+
+    </style>
+
+</head>
+<body>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quae exercitationem architecto impedit ipsum sapiente distinctio hic tenetur error sequi porro neque ratione voluptate, corporis voluptas excepturi consequuntur obcaecati corrupti?
+    <img src="../images/testimg.jpg" alt="" onmousemove="where(event)">
+    <div class="info">
+
+    </div>
+
+    <!-- 자바스크립트 작업 영역 -->
+    <script>
+        const information = document.querySelector(".info");
+        function where(e){
+            // console.log(e.clientX);
+            let txt = "";
+            txt += `clientX : ${e.clientX}, clientY : ${e.clientY}<br>`
+            txt += `offsetX : ${e.offsetX}, offsetY : ${e.offsetY}<br>`
+            information.innerHTML = txt;
+        }
+    </script>
+</body>
+</html>
