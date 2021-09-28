@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mouse event</title>
+
+</head>
+<body>
+    <span 
+    onmousedown="down(this)" 
+    onmouseup="up(this)"
+    onmouseover="over(this)"
+    onmouseout="out(this)"
+    onwheel="wheel(e,this)"
+    class="event">Event</span>발생!
+
+
+    <!-- 자바스크립트 작업 영역 -->
+    <script>
+        // const mEv = document.querySelector(".event");
+        function down(obj) { 
+            obj.style.fontStyle ="italic";
+        }
+        function up(obj) { 
+            obj.style.fontStyle ="normal";
+        }
+        function over(obj) { 
+            obj.style.borderColor ="lightgray";
+        }
+        function out(obj) { 
+            obj.style.borderColor ="red";
+        }
+        function wheel(e,obj) { 
+            if(e.wheelDelta < 0) {
+                console.log("mouse Wheel down");
+            }
+        }
+    </script>
+</body>
+</html>
