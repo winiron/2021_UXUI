@@ -5,21 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mouse event</title>
+    <style>
+        body { height: 100%;}
+        span { border:1px solid #000; }
+    </style>
 
 </head>
-<body>
+<body onwheel="wheel(event,this)">
     <span 
     onmousedown="down(this)" 
     onmouseup="up(this)"
     onmouseover="over(this)"
     onmouseout="out(this)"
-    onwheel="wheel(e,this)"
     class="event">Event</span>발생!
 
 
     <!-- 자바스크립트 작업 영역 -->
     <script>
-        // const mEv = document.querySelector(".event");
+        const mEv = document.querySelector(".event");
+        let width = 1; 
         function down(obj) { 
             obj.style.fontStyle ="italic";
         }
@@ -35,7 +39,14 @@
         function wheel(e,obj) { 
             if(e.wheelDelta < 0) {
                 console.log("mouse Wheel down");
+                width--; // width = width -1;
+                if(width < 1){ width = 1 }
+            } else {
+                console.log("mouse Wheel up");
+                width++; // width = width + 1;
             }
+            mEv.style.borderStyle="solid";
+            mEv.style.borderWidth= width + "px";
         }
     </script>
 </body>
