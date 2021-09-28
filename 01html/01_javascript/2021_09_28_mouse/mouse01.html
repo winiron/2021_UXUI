@@ -13,34 +13,29 @@
 </head>
 <body onwheel="wheel(event,this)">
     <span 
-    onmousedown="down(this)" 
-    onmouseup="up(this)"
-    onmouseover="over(this)"
-    onmouseout="out(this)"
-    class="event">Event</span>발생!
+    onmousedown = "down(this)" 
+    onmouseup = "up(this)"
+    onmouseover = "over(this)"
+    onmouseout = "out(this)"
+    class = "event">Event</span>발생!
 
 
     <!-- 자바스크립트 작업 영역 -->
     <script>
+
         const mEv = document.querySelector(".event");
         let width = 1; 
-        function down(obj) { 
-            obj.style.fontStyle ="italic";
-        }
-        function up(obj) { 
-            obj.style.fontStyle ="normal";
-        }
-        function over(obj) { 
-            obj.style.borderColor ="lightgray";
-        }
-        function out(obj) { 
-            obj.style.borderColor ="red";
-        }
+
+        function down(obj) { obj.style.fontStyle ="italic"; }
+        function up(obj) { obj.style.fontStyle ="normal"; }
+        function over(obj) { obj.style.borderColor ="lightgray"; }
+        function out(obj) { obj.style.borderColor ="red"; }
+
         function wheel(e,obj) { 
-            if(e.wheelDelta < 0) {
+            if (e.wheelDelta < 0) {
                 console.log("mouse Wheel down");
                 width--; // width = width -1;
-                if(width < 1){ width = 1 }
+                if (width < 1) { width = 1 }
             } else {
                 console.log("mouse Wheel up");
                 width++; // width = width + 1;
@@ -48,6 +43,7 @@
             mEv.style.borderStyle="solid";
             mEv.style.borderWidth= width + "px";
         }
+
     </script>
 </body>
 </html>
