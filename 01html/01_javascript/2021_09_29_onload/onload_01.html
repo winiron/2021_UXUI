@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onLoad</title>
+</head>
+<body onload="">
+    <!-- <button onclick="alert('누름금지1')">누루지 마샘...</button> -->
+    <button class="btn1">누루지 마샘...</button>
+    <button class="btn2">누루지 마샘...</button>
+    <!-- 자바스크립트 -->
+    <script>
+        // document.querySelector("btn1").onclick = function(){
+        //     alert("누름금지1");
+        // };
+        function noClick() { alert("noClick"); }    //함수 생성  : noClick() 
+        function noClick1() { alert("noClick1");}   //함수 생성  : noClick1() 
+
+        //지정 Dom ⇨ onclick ⇨ 이벤트 발생 ⇨ 지정함수 실행 
+        document.querySelector(".btn1").onclick = noClick;      
+        document.querySelector(".btn2").addEventListener("click",noClick1);
+        
+    </script>
+</body>
+</html>
