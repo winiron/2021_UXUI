@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>onLoad</title>
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        // $(document).ready(function(){
+        //     alert('jQueyry1')
+        // });
+        // $(document).ready(function(){
+        //     alert('jQueyry2')
+        // });
+        // window.onload = function() { alert('load1')}
+    </script>
 </head>
-<body onload="">
+<body onload="gogo()">
     <!-- <button onclick="alert('누름금지1')">누루지 마샘...</button> -->
     <button class="btn1">누루지 마샘...</button>
     <button class="btn2">누루지 마샘...</button>
@@ -21,6 +31,10 @@
         //지정 Dom ⇨ onclick ⇨ 이벤트 발생 ⇨ 지정함수 실행 
         document.querySelector(".btn1").onclick = noClick;      
         document.querySelector(".btn2").addEventListener("click",noClick1);
+
+        function gogo() {
+            alert('load');
+        }
         
     </script>
 </body>

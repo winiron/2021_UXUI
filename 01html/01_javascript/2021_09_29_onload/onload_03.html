@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <select id="sel" onchange="changeImg()">
+            <option value="../images/apple.png">apple</option>      <!-- index:0 -->
+            <option value="../images/banana.png">banana</option>    <!-- index:1 -->
+            <option value="../images/car.png">car</option>          <!-- index:2 -->
+        </select>
+    </form>
+    <span class="imgSize"></span>
+
+    <img src="../images/apple.png" alt="" class="myImg">
+
+    <!-- 자바스크립트 -->
+    <script>
+        function changeImg() {
+
+            const sel = document.querySelector('#sel');
+            const imgSize = document.querySelector(".imgSize");
+            const img = document.querySelector('.myImg');
+
+            let index = sel.selectedIndex;
+
+            img.onload = function(){
+                imgSize.innerHTML = `${img.width} x ${img.height}`
+            }
+
+            img.src = sel.options[index].value;
+
+        };
+    </script>
+</body>
+</html>
