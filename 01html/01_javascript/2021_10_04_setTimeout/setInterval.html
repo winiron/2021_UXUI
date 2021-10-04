@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setInterval()</title>
+</head>
+<body>
+
+    <button onclick="myClick()">click</button>
+
+    <div>
+        <span id = "span">자동회전하는 텍스트 입니다.</span>
+    </div>
+    
+    <!-- 자바스크립트 영역 -->
+    <script>
+        // function myClick() {
+        //     // setInterval("time()",3000);
+        //     // setInterval(function(){
+        //     //     console.log("hello");
+        //     // },3000); // 3초 간격 "hello" 출력
+        //     setInterval("f()",3000) // 3초 간격 "hello" 출력
+        // }
+        // function f() {
+        //     console.log("hello");// "hello" 출력
+        // }
+        //window.setInterval("f()",3000); // 3초 간격 "hello" 출력
+
+        //var div = document.getElementById("span");
+        const div = document.querySelector("#span");
+        window.setInterval("doRotate()",200);
+
+        function doRotate() {
+            let str = div.innerHTML;                    //"자동회전하는 텍스트 입니다." ⇨ str
+            let firstChr = str.substr(0,1);             // 0번 인덱스 start and 글자수 1개 ⇨ "자" ⇨ firstChr
+            let remains = str.substr(1,str.length-1);   // 1번 인덱스 start and 글자수(str의 글자 수 - 1) ⇨ remains
+            str = remains + firstChr                    
+            console.log(str);
+            div.innerHTML = str;
+        }
+    </script>
+</body>
+</html>
