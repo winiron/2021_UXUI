@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>setTimeout()</title>
+</head>
+<body>
+
+    <img src="../images/testimg.jpg" alt="" title="에펠탑" 
+    onmouseover="startTimer(5000)" onmouseout="cancelTimer()">
+    
+    <!-- 자바스크립트 영역 -->
+    <script>
+        let timerId = null; //젼역변수화
+        function startTimer(time) {
+            timerId = setTimeout("load('http://www.naver.com')",time); // window.setTimeout
+            console.log(timerId);
+        }
+        function load(url) {
+            window.location = url;
+        }
+        function cancelTimer() {
+            if(timerId != null) {
+                clearTimeout(timerId); // window.cloearTimeout
+            }  
+        }
+    </script>
+</body>
+</html>
