@@ -1,0 +1,15 @@
+@charset "UTF-8";
+.glayLayer {
+    position:fixed; 
+    width:100%; height:100%;
+    background:#000; top:0; left:0; 
+    opacity: 0.3;
+    display:none;
+}
+.overLayer {
+    position:fixed; 
+    /* width:300px; height:300px;   */
+    background:#fff;  
+    top:50%; left:50%;  transform:translate(-50%, -50%);
+    display:none;
+}
