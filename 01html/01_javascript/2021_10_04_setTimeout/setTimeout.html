@@ -14,7 +14,7 @@
     <script>
         let timerId = null; //젼역변수화
         function startTimer(time) {
-            timerId = setTimeout("load('http://www.naver.com')",time); // window.setTimeout
+            timerId = setTimeout("load('http://www.naver.com')",time); // window.setTimeout()
             console.log(timerId);
         }
         function load(url) {
@@ -22,7 +22,7 @@
         }
         function cancelTimer() {
             if(timerId != null) {
-                clearTimeout(timerId); // window.cloearTimeout
+                clearTimeout(timerId); // window.clearTimeout()
             }  
         }
     </script>
