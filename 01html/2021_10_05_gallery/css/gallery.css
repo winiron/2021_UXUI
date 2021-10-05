@@ -24,13 +24,16 @@
     display:flex;justify-content: center;align-items:center;
     cursor:pointer;
 }
-
-#thumbnail div.container{width: 760px;height: 95px;overflow: hidden;}
-
-#thumbnail div.container ul{
-    width: calc( 760px * 3 );
-    position: relative;
-    left:calc( -760px * 0 )}
+#thumbnail div.container {
+    width:760px; height:95px;
+    overflow:hidden;
+}
+#thumbnail div.container ul {
+    width:calc( 760px * 3 ); /* 너비 */
+    position:relative; left:calc( -760px * 0 ) /* 위치 이동 */
+}
 #thumbnail div.container li{
-    float: left;width: 120px;margin-left: 8px;_padding-top: 10px;
+    float:left;
+    width:120px;
+    margin-left:8px; /* padding-top:10px; */
 }
