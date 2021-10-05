@@ -1,7 +1,11 @@
 @charset "UTF-8";
 
-#gallery{width: 824px;margin: 0 auto;background: skyblue;}
-#image{width: 760px;margin: 0 auto;}
+#gallery {
+    width:824px;
+    margin:0 auto;
+    background:skyblue;
+}
+#image {width: 760px;margin: 0 auto;}
 #image p{display: none;}
 
 #thumbnail{width: 824px;_height: 95px;}
