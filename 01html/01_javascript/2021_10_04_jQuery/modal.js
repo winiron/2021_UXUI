@@ -6,8 +6,8 @@ $("body").append(`
 
 //jQuery 문법
 $("a.modal").click(function(event) { //$("선택").on("click", function(){})
-    event.preventDefault();         // a tag href 기본 이벤트를 막아줌. 
-    $(".glayLayer").fadeIn();       // $(selector).fadeIn(speed,easeing, callback) 
+    event.preventDefault();         // ① <a href="#"> ~ 기본 이벤트를 막아줌. 
+    $(".glayLayer").fadeIn();       // ② $(selector).fadeIn(speed,easeing, callback) 
     
     // let aHref = $(a.modal).attr("href");
     // $(this) ≒ a.modal 
