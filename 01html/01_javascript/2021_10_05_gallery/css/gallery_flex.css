@@ -6,38 +6,33 @@
     background:skyblue;
     padding:30px 0;
 }
-#image {
+#gallery > #image {
     width:760px;
     margin:0 auto;
 }
-#image p {
+#gallery > #image > p {
     display:none;
 }
-
-#thumbnail {
+#gallery > #thumbnail {
     width:824px; /* height:95px; */
     display:flex;
 }
-#thumbnail > .container {
-    display:flex;
-}
-#thumbnail > div.left,
-#thumbnail > div.right{
+#gallery > #thumbnail > div.left,
+#gallery > #thumbnail > div.right {
     width:32px; height:95px;
     display:flex; justify-content:center; align-items:center;
     cursor:pointer;
 }
-#thumbnail div.container {
+#gallery > #thumbnail > div.container {
     width:760px; height:95px;
     overflow:hidden;
 }
-
-#thumbnail div.container ul{
+#gallery > #thumbnail > div.container > ul {
     display:flex; justify-content:space-between;
-    width: calc( 760px * 3 );
+    width:calc( 760px * 3 );
     position:relative; left:calc( -760px * 0 );
     _transition:0.3s
 }
-#thumbnail div.container li {
+#gallery > #thumbnail > div.container > ul > li {
    width:120px ;margin-left:8px;  
 }

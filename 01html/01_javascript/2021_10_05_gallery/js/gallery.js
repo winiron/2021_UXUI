@@ -1,10 +1,10 @@
-$("#thumbnail li").click(function(){
-    let num = $(this).index();
-    //$("#image>p").hide();
-    $("#image>p").hide().eq(num).show()
+$("#thumbnail li").click(function() {
+    let num = $(this).index(); // this ≒ #thumbnail li
+    //$("#image > p").hide();
+    $("#image > p").hide().eq(num).show();
 });
 
-let current = 0; // 초기 값 (변수)
+let current = 0; // 초기 값 (변수) 지정
 $(".right").click(function() { 
     current++;              // ① current = current + 1
     if(current == 3) {      // ② 만약 current 값 "3" 이면 ⇨ current의 값에 "2"을 대입
