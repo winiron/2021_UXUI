@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .box {
+            width: 500px; height:300px;
+            background-color:dodgerblue;
+            /* position: relative; left:100px; top:100px; */
+            position: absolute; left:50%; top:50%; transform:translate(-50%, -50%);
+        }
+        .car { position:absolute; top:100px; left:50px; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="../images/car.png" alt="" class="car">
+    </div>
+    자동차 이미지 크기 : <span class="carSize">0</span><br>
+    자동차 포지션 : <span class="carPosition">0</span><br>
+    자동차 오프셋 : <span class="carOffset">0</span><br>
+    <!-- javaScript workArea -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script>
+        const car = $(".car");
+        const carPosition = car.position(); // 지역 좌표
+        const carOffset = car.offset();     // 전역 좌표
+        $(".carSize").html(`${car.width()}px, ${car.height()}px`);
+        $(".carPosition").html(`x = ${carPosition.left}px, y = ${carPosition.top}px`);
+        $(".carOffset").html(`x = ${carOffset.left}px, y = ${carOffset.top}px`);
+
+        const bWidth = $("body").width();
+        if (bWidth < 100 ) {
+            $("body").css("background-color","red")
+        }
+
+
+    </script>
+</body>
+</html>
