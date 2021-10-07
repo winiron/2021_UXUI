@@ -1,5 +1,6 @@
-function nowMenu(menu) { // "main" ⇨ menu  ∴ "main"값을 변수 meun에 저장
-    if(menu == "main") {
+//nowMenu() 함수 정의
+function nowMenu(menu) {    // html에서의 nowMenu(인자);에서 넘어온 값 ⇨ menu  
+    if (menu == "main") {   // 만약 변수 menu의 값이 "main"이면 
         $(".bar").css("opacity",0)
         console.log("mainPage 연결됨");
     } else {
