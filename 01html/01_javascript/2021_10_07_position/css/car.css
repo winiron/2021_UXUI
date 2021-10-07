@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+.panel {
+    width:600px; height: 300px;
+    border:1px solid #000;
+    margin: 0 auto;
+    position: relative;
+}
+.bar {
+    width: 500px; height: 20px;
+    background-color: red;
+    position:absolute; left: 50px; top:190px;
+}
+.car {
+    position:absolute; left: 50px; top:120px;
+}
+.car.rotate {
+    transform:rotateY(180deg);
+}
