@@ -2,7 +2,6 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position</title>
     <link rel="stylesheet" href="../css/reset.css">
@@ -34,7 +33,7 @@
         $(".carOffset").html(`x = ${carOffset.left}px, y = ${carOffset.top}px`);
 
         const bWidth = $("body").width();
-        if (bWidth < 100 ) {
+        if (bWidth < 1000 ) {
             $("body").css("background-color","red")
         }
 
