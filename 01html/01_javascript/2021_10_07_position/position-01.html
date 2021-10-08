@@ -32,11 +32,27 @@
         $(".carPosition").html(`x = ${carPosition.left}px, y = ${carPosition.top}px`);
         $(".carOffset").html(`x = ${carOffset.left}px, y = ${carOffset.top}px`);
 
-        const bWidth = $("body").width();
-        if (bWidth < 1000 ) {
-            $("body").css("background-color","red")
+        let bWidth = $("body").width();
+        console.log(bWidth);
+    
+        //함수 선언
+        function windowView(){
+            if (bWidth < 1000 ) {
+                $("body").css("background-color","red")
+            } else {
+                $("body").css("background-color","initial")
+            }
         }
 
+        windowView(); // 문서 시작 시점 ⇨ 활성화
+
+        //window.onresize = function(){}; //자바스크립트
+        //window.addEventListener("resize",function(){});//자바스크립트
+        $(window).resize(function(){
+            bWidth = $("body").width();
+            console.log(bWidth);
+            windowView(); // 리사이지 시작 시점 ⇨ 시작
+        }); 
 
     </script>
 </body>
