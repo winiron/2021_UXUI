@@ -1,8 +1,27 @@
 @charset "UTF-8";
 
 .box1 {
-    position: fixed;
-    padding: 20px;
-    right: 100px; top: 100px;
+    position:fixed; right:100px; top:100px;
+    padding:20px;
+    background-color:skyblue;
+    border-radius:20px;
+}
+.nav.fixed {
+    position:fixed; top:0;
+    width:100%;
+}
+.nav > ul { display:flex; }
+.nav > ul > li {
+    width:20%;
+    text-align: center;
     background-color: dodgerblue;
+    color:white;
+    line-height:40px;
+    cursor: pointer;
+}
+.nav > ul > li:last-child {
+    border-right:none;
+}
+.nav > ul > li:hover {
+    background:darkblue;
 }
