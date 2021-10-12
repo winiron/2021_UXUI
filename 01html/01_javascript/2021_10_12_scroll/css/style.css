@@ -25,22 +25,24 @@
 .nav > ul > li:hover {
     background:darkblue;
 }
+
 .car1 {
-    position: relative; 
-    left: 0; 
-    transition:0.3s;
-    opacity:0;
+ position:relative; left:0;
+ transition:0.3s;
+ opacity:0;
 }
 .car1.move1 {
-    left:50%; opacity:1;
+    left:300px;
+    opacity:1;
 }
 .car2 {
-    position: absolute;  right:0; 
+    position:absolute; right:0;
     transition:0.3s;
     opacity:0;
 }
 .car2.move2 {
-    right:50%; opacity:1;
+    right:300px;
+    opacity:1;
 }
 
 .top {
