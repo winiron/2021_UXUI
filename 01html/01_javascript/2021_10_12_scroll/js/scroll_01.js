@@ -31,9 +31,9 @@ $(window).scroll(function(){
     }
 
     if (scrollY > halfH) {
-        $(".top").show()
+        $(".top").fadeIn();
     } else {
-        $(".top").hide()
+        $(".top").fadeOut();
     }
 });
 
