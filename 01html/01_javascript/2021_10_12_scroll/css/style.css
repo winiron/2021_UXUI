@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+.box1 {
+    position: fixed;
+    padding: 20px;
+    right: 100px; top: 100px;
+    background-color: dodgerblue;
+}
