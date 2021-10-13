@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+.menu {
+    width:100%; background-color: #ccc;
+}
+.menu.fixed {
+    position:fixed;
+    background-color: dodgerblue;
+    width:100%;
+    
+}
+.menu.fixed a {
+    line-height:40px;
+    color:white;
+}
+.menu ul {
+    width:1000px;
+    margin:0 auto;
+}
+.menu li {
+    float: left;
+    width:20%;
+}
+.menu li a {
+    display: block;
+    text-align:center;
+    line-height:40px;
+    transition:0.3s;
+}
+.content {
+    height: 3000px;
+}
