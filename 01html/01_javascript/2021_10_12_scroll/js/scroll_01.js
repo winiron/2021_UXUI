@@ -12,10 +12,11 @@ $(window).scroll(function() {
     
     $(".scrollY").html(`${scrollY}px`);
 
+    // 메뉴의 위치(고정) < 스크롤 위치(변동) ⇨ ①
     if (menuPos < scrollY) {
-        $(".nav").addClass("fixed");
+        $(".nav").addClass("fixed"); // ①
     } else {
-        $(".nav").removeClass("fixed");
+        $(".nav").removeClass("fixed"); 
     }
 
     if ( scrollY > $(".car1").offset().top - 800 ) {
