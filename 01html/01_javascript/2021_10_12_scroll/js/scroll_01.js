@@ -5,7 +5,7 @@ let halfH = $("body").height() / 2;
 $(".menuPos").html(`${menuPos}px`);
 $(".scrollY").html(`${scrollY}px`);
 
-$(window).scroll(function(){
+$(window).scroll(function() {
     //console.log(window.pageYOffset) // javascript scroll value
     //console.log($(window).scrollTop()); // jquery scroll value
     scrollY = $(window).scrollTop();
