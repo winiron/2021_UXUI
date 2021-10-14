@@ -1,4 +1,4 @@
-setInterval(slider,3000);
+setInterval(slider,3000); // 함수사용
 
 let current = 0;
 let num = $("#wrap ul li").length;
