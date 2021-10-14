@@ -29,7 +29,7 @@
 
 // 3st : hash this.hash
 $(".menu>a").click(function(e){ // a테그 클릭 시 ⇨ 
-    e.preventDefault(); // a 태그의 기본 값을 해제.
+    e.preventDefault(); // a 태그의 기본 값(기능)을 해제(삭제).
     let target = $(this.hash);
     let st = target.offset().top;
 
@@ -41,15 +41,33 @@ $(".menu>a").click(function(e){ // a테그 클릭 시 ⇨
 
 });
 
+/// 스크롤 움직임 ⇨ 메뉴 "on"
 $(window).scroll(function(){
-    let scrollY = $(window).scrollTop();
-    if (scrollY >= $(".scene").eq(0).offset().top) {
-        $(".menu>a").removeClass().eq(0).addClass("on");
+    let scrollY = $(window).scrollTop(); // 중요! ∴ 변하는 값
+
+    // 1st
+    // if (scrollY >= $(".scene").eq(0).offset().top) {  // scrollY >= "0"
+    //     $(".menu>a").removeClass().eq(0).addClass("on");
+    // }
+    // if (scrollY >= $(".scene").eq(1).offset().top) { // scrollY >= "969"
+    //     $(".menu>a").removeClass().eq(1).addClass("on");
+    // }
+    // if (scrollY >= $(".scene").eq(2).offset().top) { // scrollY >= "1938"
+    //     $(".menu>a").removeClass().eq(2).addClass("on");
+    // }
+
+    // 2st : for
+    for (let i=0; i<$(".scene").length; i++) {
+        if (scrollY >= $(".scene").eq(i).offset().top) {
+            $(".menu>a").removeClass().eq(i).addClass("on");
+        }
     }
-    if (scrollY >= $(".scene").eq(1).offset().top) {
-        $(".menu>a").removeClass().eq(1).addClass("on");
-    }
-    if (scrollY >= $(".scene").eq(2).offset().top) {
-        $(".menu>a").removeClass().eq(2).addClass("on");
-    }
+
+    //3st $(selector).each()
+    // $(".scene").each(function(index){
+    //     if(scrollY >= $(this).offset().top){
+    //         $(".menu>a").removeClass().eq(index).addClass("on")
+    //     }
+    // });
+
 });
