@@ -3,7 +3,7 @@ setInterval(slider,3000); // 함수사용
 let current = 0;
 let num = $("#wrap ul li").length;
 // 함수 생성
-function slider(){
+function slider() {
 
     $("#wrap li").eq(current).css("left",0).stop().animate({"left":"-100%"},1000);
     current++;
