@@ -1,12 +1,22 @@
 @charset "UTF-8";
-body { height:400vh; }
+body { height:100vh; }
 
 #visual {
     background:url(../images/bg-top.jpg) no-repeat center;
+    background-size:cover;
 }
-.gray {
-    background:#f0f1f4 !important;
+.gray { background:#f0f1f4 !important; }
+.line::after {
+    content:"";
+    display:block;
+    width:100px; height:2px;
+    background:#aaa;
+    margin: 10px auto;
 }
+.bg-shadow {
+    box-shadow:5px 5px 10px rgba(0,0,0,0.2) ;
+}
+
 @media screen and (min-width:768px) {
     .navbar .nav-item .dropdown-menu { 
         display:none; 
@@ -16,3 +26,4 @@ body { height:400vh; }
         display: block;
     }
 }
+

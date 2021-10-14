@@ -37,6 +37,14 @@
                                     <a class="dropdown-item" href="#">PRODUCT2</a>
                                 </div>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">COMMUNITY</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item" href="#">SNS</a>
+                                    <a class="dropdown-item" href="#">NOTICE</a>
+                                    <a class="dropdown-item" href="#">FREE BORAD</a>
+                                </div>
+                            </li>
                         </ul>
                         <!-- 폼 문서 삭제-->
                     </div>
@@ -44,7 +52,7 @@
             </div>
         </div>
 
-        <div id="visual" class="py-5">
+        <div id="visual" class="py-5"> <!-- py: x축 padding(left, right) -->
             <div class="container text-center text-white py-5 py-md-5">
                 <h2>Lorem ipsum dolor sit amet.</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, ipsam!</p>
@@ -54,20 +62,88 @@
             </div>
         </div>
 
-        <div id="content" class="py-5 gray">
-            <div class="container py-md-5 px-5 px-md-0">
+        <div id="contentOne" class="gray py-5">  <!-- py : y축 padding(top, bottom) -->
+            <div class="container px-5 px-md-0"> <!-- px: x축 padding(left, right) -->
                 <div class="row">
-                    <div class="col-md-5 mb-5 mb-md-0">
+                    <div class="col-md-5  order-2 order-md-1">
                         <h2>Lorem ipsum dolor sit amet.</h2>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, incidunt!</p>
-                        <a href="#" class="btn btn-primary d-block d-md-inline-block">more</a>
+                        <a href="#!" class="btn btn-primary d-block d-md-inline-block">more</a>
                     </div>
-                    <div class="col-md-7">
+                    <div class="col-md-7 mb-5 mb-md-0 order-1 order-md-2">
                         <img src="images/symu-panel-1.png" alt="" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
+
+        <div id="contentTwo" class="container py-5 px-5 px-md-0">
+            <div class="row">
+                <div class="col-md-7 mb-5 mb-md-0">
+                    <img src="images/symu-panel-2.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-md-5">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum, incidunt!</p>
+                    <a href="#!" class="btn btn-primary d-block d-md-inline-block">more</a>
+                </div>
+            </div>    
+        </div>
+
+        <div id="contentThree" class="gray py-5 mb-5">   <!-- py : y축 padding(top, bottom) -->
+            <div class="container px-3 px-md-0">    <!-- px: x축 padding(left, right) -->
+                <h3 class="text-center line">GALLERY</h3>
+                <p class="text-center mb-5">Lorem ipsum dolar sit amet.</p> <!-- mb : margin-bottom -->
+                <div class="row">
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <div class="card bg-shadow">
+                            <img src="images/testimg.jpg" alt="" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h4 class="card-title">Loerm, Ipsum.</h4>
+                                <p class="card-text">Lorem, ipsum dolar.</p>
+                                <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline-block">VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <div class="card bg-shadow">
+                            <img src="images/testimg.jpg" alt="" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h4 class="card-title">Loerm, Ipsum.</h4>
+                                <p class="card-text">Lorem, ipsum dolar.</p>
+                                <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline-block">VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card bg-shadow">
+                            <img src="images/testimg.jpg" alt="" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h4 class="card-title">Loerm, Ipsum.</h4>
+                                <p class="card-text">Lorem, ipsum dolar.</p>
+                                <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline-block">VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="card bg-shadow">
+                            <img src="images/testimg.jpg" alt="" class="card-img-top img-fluid">
+                            <div class="card-body">
+                                <h4 class="card-title">Loerm, Ipsum.</h4>
+                                <p class="card-text">Lorem, ipsum dolar.</p>
+                                <a href="#!" class="btn btn-primary btn-sm d-block d-md-inline-block">VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer" class="py-5 bg-primary"> <!-- py : y축 padding(top, bottom) -->
+            <div class="container text-white text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit id ea vitae rem, autem necessitatibus numquam facilis! Tempore, eum!
+            </div>
+        </footer>
         
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
