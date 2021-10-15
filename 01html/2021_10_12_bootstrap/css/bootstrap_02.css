@@ -13,9 +13,7 @@ body { height:100vh; }
     background:#aaa;
     margin: 10px auto;
 }
-.bg-shadow {
-    box-shadow:5px 5px 10px rgba(0,0,0,0.2) ;
-}
+.bg-shadow { box-shadow:5px 5px 10px rgba(0,0,0,0.2); }
 
 @media screen and (min-width:768px) {
     .navbar .nav-item .dropdown-menu { 
