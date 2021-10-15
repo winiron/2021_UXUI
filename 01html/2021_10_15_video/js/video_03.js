@@ -9,7 +9,7 @@ for (let index=0; index<totalImg; index++) {
     imgArray.push(imgElem);
 }
 
-window.addEventListener("scroll",function(){
+window.addEventListener("scroll",function() {
     let scrollY = window.pageYOffset;
     let progress = scrollY / (document.body.offsetHeight - window.innerHeight);
     currentImgNum = Math.round((totalImg -1) * progress);
