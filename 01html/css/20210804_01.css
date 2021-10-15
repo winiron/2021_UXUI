@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* header */
+#header {
+    width:1000px;
+    background-color:skyblue;
+    margin: 0 auto;
+    padding-top:10px;
+}
+#header>h1 {
+    width: 100px; height: 100px;
+    margin:0 auto;
+    background-color: darkgray;
+    margin-bottom:10px;
+}
+#header>h1>a {
+    display: block;
+    text-align: center; line-height:100px;
+}
+#header .gnb {
+    
+}
+#header .gnb ul li {
+    float: left;
+    width:20%;
+    background-color: blue;
+
+}
+#header .gnb ul li a {
+    display: block;
+    line-height:40px;
+    text-align: center;
+    color: azure;
+}
+#header .gnb ul li:hover a{
+    background-color: black;
+    color: azure;
+}
+
+/* visual */
+
+.visual {
+    background-color:pink;
+    padding:20px 0;
+}
+.container {
+    width:1000px; height:300px;
+    margin: 0 auto;
+    position: relative;
+}
+.container div {
+    position: absolute;
+}
+.container .box1 {
+    width: 400px; height: 150px;
+    background-color: #f00;
+    top:50%; margin-top:-75px;
+}
+.container .box2 {
+    width: 300px; height: 200px;
+    background-color:orange;
+    right:20px; bottom:0;
+}
+
+/* start section1 */
+
+#section1 { width:1000px; margin:0 auto; margin-top:25px;  margin-bottom:50px;}
+#section1 .title { padding:20px; }
+#section1 .title h3 { text-align: center;}
+#section1 .title h3::after {
+    content: "";
+    width:50px; height: 2px;
+    background-color: black;
+    display: block;
+    margin:10px auto;
+}
+#section1 .title p { text-align: center; }
+#section1 ul li { float:left; width:231.25px; margin-right:25px; }
+#section1 ul li:last-child { margin-right:0; }
+#section1 ul li img { width:100%; display:block; }
+
+/* start section2 */
+#section2Wrap { width:100%; }
+#section2 { width:1000px; margin:0 auto; padding:25px 0;}
+#section2 ul li { float:left; width:316.666666666666px; margin-right:25px; }
+#section2 ul li:last-child { margin-right:0; }
+#section2 ul li img { width:100%; display:block; }
+
+/* footer */
+#footer { width:980px; margin:0 auto;}
+#footer h2 { float: left;  color: white; width:200px;}
+#footer address { 
+    float: left; color:#999999; font-size:14; font-style: normal;
+}
+
+
+
+/* common css */
+.bgYellow { background-color: yellow !important; }
+.bgBlue { background-color:blue !important; }
+.bgGray { background-color:rgb(51, 49, 49) !important; }
+.bgFooter { background-color:#1c1b1b;}
+.bgFooterPadding { padding-top:20px; padding-bottom:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

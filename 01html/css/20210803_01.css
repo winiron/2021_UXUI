@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+body {
+    background: url(../images/bg_grid.gif);
+}
+.box1, .box2, .box3, .box4, .box5 {
+    width:100px; height:100px;
+    display:flex; justify-content:center; align-items:center;
+}
+.box1 {
+    background-color:brown;
+    position:absolute; right: 0; 
+    color:white;
+
+}
+.box2 {
+    background-color:aquamarine;
+    position:absolute; right: 0; bottom:0;
+}
+.box3 {
+    background-color:orange;
+    position:absolute; left: 0; bottom:0;
+}
+.box4 {
+    background-color:cornflowerblue;
+    position:absolute; left: 0; top:0;
+}
+.box5 {
+    background-color:darkmagenta;
+    position:absolute; left:50%; top:50%;
+    color: white;
+}

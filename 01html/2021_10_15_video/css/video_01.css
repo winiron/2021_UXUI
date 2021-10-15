@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body { height:400vh; } 
+#gnb {
+    width:100%;
+    background:skyblue;
+    position:absolute; top:30px;
+    z-index:1; 
+    color:darkblue;
+}
+#gnb .menu {
+    width:1000px; height:50px;
+    margin:0 auto;
+    display:flex; justify-content:space-between;
+}
+.menu li {
+    width:20%;
+    display:flex; align-items:center; justify-content:center;   
+    cursor:pointer; 
+    transition: 0.3s;
+}
+.menu li:hover { background:dodgerblue; color:white;}
+
+.myVideo { 
+    position:absolute;
+    width:100%; height:100%;
+    /* top:0; right:0; bottom:0; left:0; */
+    object-fit:cover; /* ★.중요 */
+}
