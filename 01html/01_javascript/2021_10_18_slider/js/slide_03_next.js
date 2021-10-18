@@ -51,16 +51,16 @@ let overBtn = false;
             };
 
 
-            $(".next").click(function() { // .nextBtn "Click" ⇨ nextSlider() 함수 실행
+            $(".next").click(function() { // .next "Click" ⇨ nextSlider() 함수 실행
                 nextSlider(); // nextSlider() 함수 실행
             });
 
-            $(".prev").click(function() {
+            $(".prev").click(function() { // .prev "Click" ⇨ prevSlider() 함수 실행
                 prevSlider();
             });
 
 
             //  autoplay  함수
-            // setInterval(function(){
-            //     $(".next").trigger("click");
-            // },3000);
+            setInterval(function(){
+                $(".next").trigger("click");
+            },3000);
