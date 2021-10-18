@@ -5,3 +5,12 @@ body { height:400vh; }
     width:100%; 
     position:fixed; top:0; left:0;
 }
+.view {
+    position:relative; width:100%;
+    text-align: center;
+    color:white;
+    padding:50vh;
+}
+.mb100 {
+    margin-bottom:100vh;
+}
