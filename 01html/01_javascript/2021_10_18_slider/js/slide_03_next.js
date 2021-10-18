@@ -58,8 +58,7 @@ let overBtn = false;
             $(".prev").click(function() { // .prev "Click" ⇨ prevSlider() 함수 실행
                 prevSlider();
             });
-
-
+            
             //  autoplay  함수
             setInterval(function(){
                 $(".next").trigger("click");
