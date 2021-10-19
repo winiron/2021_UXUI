@@ -22,3 +22,19 @@ img {
 #wrap li:first-child { 
     left:0;  
 }
+#wrap .pager span {
+    width:15px;
+    height:15px;
+    display:inline-block;
+    border-radius:50%;
+    background-color:orange;
+    text-indent:-9999px;
+    cursor:pointer;
+}
+#wrap .pager span:hover {
+    background-color:#f00;
+}
+#wrap .pager span.active {
+    background-color:#fff;
+}
+
