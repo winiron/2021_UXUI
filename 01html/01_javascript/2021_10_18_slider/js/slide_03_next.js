@@ -8,7 +8,7 @@ let overBtn = false;
             // nextSlider() 함수 생성
             function nextSlider() {
 
-                if (overBtn == false) { 
+                if (overBtn == false) { // if문 : 이중 클릭 방지 
                     overBtn = true;
                     $("#wrap li")
                         .eq(current)
@@ -16,12 +16,12 @@ let overBtn = false;
                         .stop()
                         .animate({"left":"-100%"},400);
                     current++;
-                    if (current ==5 ) { current = 0 }
+                    if (current ==5 ) { current = 0 } // current == 5  ⇨ current = 0
                     $("#wrap li")
                         .eq(current)
                         .css({"left":"100%"})
                         .stop()
-                        .animate({"left":0},400,function(){overBtn=false});
+                        .animate({"left":0},400,function(){overBtn=false}); // 콜백 함수 사용 : 매개변수수 함수 사용
                     console.log(current);
                 }
             };
@@ -38,7 +38,7 @@ let overBtn = false;
                         .animate({"left":"100%"});
                     
                     current--; // current = current - 1;                    
-                    if( current == -1) { current = 4; }
+                    if( current == -1) { current = 4; } // current == -1  ⇨ current = 4
 
                     // 4(-100%) ⇨ 0
                     $("#wrap li")
