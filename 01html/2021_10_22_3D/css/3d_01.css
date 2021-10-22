@@ -1,0 +1,21 @@
+@charset "UTF-8";
+.box {
+    width:100px; 
+    height:100px;
+    background:#ccc;
+    position: absolute;
+    left:50%; top:50%;
+    perspective:500px; /* 원근감 ⇨ Z축 사용 */
+}
+.inBox {
+    width:100%; 
+    height:100%;
+    background:dodgerblue;
+    position:absolute;
+    transition:0.3s;
+    transform-origin:0 0; /* transform:rotateX의 중심축 이동*/
+}
+.box1:hover .inBox {
+    transform:translate3d(0px, 0px,-200px); /*x,y,z*/
+    cursor:pointer;
+}
