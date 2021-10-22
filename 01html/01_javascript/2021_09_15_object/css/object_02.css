@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.table li { 
+    float:left;  
+    margin-right:10px; 
+}
+.test{
+    display:flex;
+}

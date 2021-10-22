@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.box3 {
+    width:10px; height:10px;
+    display:inline-block;
+    border-radius:50%; 
+}
+button {
+    cursor:pointer;
+}

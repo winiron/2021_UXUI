@@ -2,9 +2,13 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DOM(Document Object Model)</title>
+
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="./css/dom_02.css">
+
     </head>
     <body>
 
@@ -13,15 +17,7 @@
         </div>
         <button onmouseover="inImgChange()" onmouseout="outImgChange()">사진변경</button>
 
-        <!-- javaScript -->
-        <script>
-            const div = document.getElementById("first");
-            function inImgChange(){
-                div.innerHTML ="<img src='../../images/img2.jpg'>";
-            }
-            function outImgChange(){
-                div.innerHTML ="<img src='../../images/img1.jpg'>";
-            }        
-        </script>
+        <!-- javaScript 영역 -->
+        <script src="./js/dom_02.js"></script>
     </body>
 </html>

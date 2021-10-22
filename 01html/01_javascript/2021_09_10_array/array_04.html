@@ -5,39 +5,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>array</title>
         <link rel="shortcut icon" href="#">
-        <style>
-            .box { 
-                height:100px; width:600px;
-                margin:0 auto;
-                display:flex; justify-content: center; align-items: center; 
-                border:3px solid black;
-                margin-bottom: 20px;
-
-            }
-            button { 
-                display: block;
-                margin: 0 auto;
-            }
-        </style>
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="./css/array_04.css">
     </head>
     <body>
         <div class="box"></div>
         <button onclick="printArr()">자료넣기</button>
-        <!-- Js영역 -->
-        <script>
-            // const cityArr =[];
-            const city = new Array("SEOUL","BUSAN","DAEGU","DAEJUN","INCHUN","ULSAN");
-            function printArr(){
-                let print = "";
-                for(let i=0; i<city.length; i++){
-                    // document.write(city[i]+" ");
-                    print = print + city[i] + " ";
-                }
-                // document.write(print+" ");
-                    document.getElementsByClassName("box")[0].innerHTML = print;
-            }
-        </script>
-        
+
+        <!-- 자바스크립트 영역 -->
+        <script src="./js/array_04.js"></script>
     </body>
 
 </html>
