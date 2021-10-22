@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="py-0 py-md-5 bg-primary px-3 px-md-0 mb-5">
-        <div class="container bg-warning">
+        <div class="container bg-warning"> <!-- 1140px-->
             <div class="row">
                 <div class="col-sm-6 col-md-3">01</div>
                 <div class="col-sm-6 col-md-3">02</div>
@@ -19,18 +19,20 @@
         </div>
     </div>
 
-    <div class="container p-0 mb-3">
-        <button class="btn btn-primary">button</button>
-        <a href="#" class="btn btn-info">BUTTON</a>
-        <div class="btn btn-warning">button</div>
 
+    <!-- 버튼 연습 -->
+    <div class="container p-0 mb-3"> <!-- 1140px-->
+        <button class="btn btn-primary">button</button> <!-- 버튼[1] -->
+        <a href="#" class="btn btn-info">BUTTON</a>     <!-- 버튼[2] -->
+        <div class="btn btn-warning">button</div>       <!-- 버튼[3] -->
+        <!-- 버튼 그룹 만들기-->
         <div class="btn-group">
-            <button class="btn btn-primary">button</button>
-            <button class="btn btn-primary">button</button>
-            <button class="btn btn-primary">button</button>
-            <button class="btn btn-primary">button</button>
-            <button class="btn btn-primary">button</button>
-            <button class="btn btn-primary active">button</button>
+            <div class="btn btn-primary">button</div> 
+            <div class="btn btn-primary">button</div> 
+            <div class="btn btn-primary">button</div> 
+            <div class="btn btn-primary">button</div> 
+            <div class="btn btn-primary">button</div> 
+            <div class="btn btn-primary active">button</div> 
         </div>
 
     </div>
@@ -44,46 +46,54 @@
     p-5 : padding:3rem  48px
     -->
     
-    <div class="container p-0 mb-3">
+    <div class="container p-0 mb-5"> <!-- 1140px-->
         <div class="btn-group">
             <div class="btn btn-primary">APPLE</div>
-            <div class="dropdown-menu"></div>
-            <div class="btn btn-primary">SAMSUNG</div>
+            <div class="btn-group">
+                <div class="btn btn-primary dropdown-toggle" data-toggle="dropdown">SAMSUNG</div>
+                <div class="dropdown-menu">
+                    <a href="#!" class="dropdown-item">PC</a>
+                    <a href="#!" class="dropdown-item">SMART phone</a>
+                </div>
+            </div>
+            <!-- dropdown toggle 메뉴 만들기 -->
             <div class="btn-group">
                 <div class="btn btn-primary dropdown-toggle" data-toggle="dropdown">LG</div>
                 <div class="dropdown-menu">
-                    <a href="" class="dropdown-item">tablet</a>
-                    <a href="" class="dropdown-item">tablet</a>
-                    <a href="" class="dropdown-item">tablet</a>
-                    <a href="" class="dropdown-item">tablet</a>
-                    <a href="" class="dropdown-item">tablet</a>
-                    <a href="" class="dropdown-item">tablet</a>
+                    <a href="#!" class="dropdown-item">tablet</a>
+                    <a href="#!" class="dropdown-item">tablet</a>
+                    <a href="#!" class="dropdown-item">tablet</a>
+                    <a href="#!" class="dropdown-item">tablet</a>
+                    <a href="#!" class="dropdown-item">tablet</a>
+                    <a href="#!" class="dropdown-item">tablet</a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="bg-dark">
-        <div class="container p-0">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+    <!-- navbar 연습-->
+    <div class="bg-dark"> <!-- 100% -->
+        <div class="container p-0"> <!-- 1140px -->
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark"> <!-- navbar-expand-sm : 크기가 sm 일 때 ⇨ 햄버거 버튼 실행 -->
                 <a class="navbar-brand" href="#">LOGO</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span> <!-- 햄버거 버튼 -->
+                    <span class="navbar-toggler-icon"></span> <!-- 모바일 : 햄버거 버튼 -->
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">COMPANY <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">COMPANY</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUCT <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">PRODUCT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">COMMUNITY <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">COMMUNITY</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
