@@ -5,7 +5,7 @@ body {
    height: 100vh;
     background-color:dodgerblue;
     perspective:1000px;
-    display: flex; justify-content: center; align-items:center;
+    display: flex; justify-content:space-around; align-items:center;
 }
 .card { 
     display: block;
@@ -13,12 +13,11 @@ body {
     height:308px;
     position:relative;
     transform-style: preserve-3d; /* 3D 옵션 적용*/
-    transform:rotateY(0deg);
+    transform:rotateY(180deg);
     transition:0.8s;
 }
-.card:hover {
-    transform:rotateY(180deg);
-}
+/* .card:hover { transform:rotateY(0deg); } */
+.card.back { transform:rotateY(0deg); }
 .card div {
     position: absolute; width:100%; height:100%;
     border-radius:10px;
