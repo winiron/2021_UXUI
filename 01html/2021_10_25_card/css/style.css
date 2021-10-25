@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* { margin:0; padding:0;}
+body { 
+   height: 100vh;
+    background-color:dodgerblue;
+    perspective:1000px;
+    display: flex; justify-content: center; align-items:center;
+}
+.card { 
+    display: block;
+    width:200px; 
+    height:308px;
+    position:relative;
+    transform-style: preserve-3d; /* 3D 옵션 적용*/
+    transform:rotateY(0deg);
+    transition:0.8s;
+}
+.card:hover {
+    transform:rotateY(180deg);
+}
+.card div {
+    position: absolute; width:100%; height:100%;
+    border-radius:10px;
+    overflow:hidden;
+    backface-visibility:hidden;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+}
+.card-back {
+    transform:rotateY(180deg); 
+}
