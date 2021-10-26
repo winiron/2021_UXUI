@@ -38,7 +38,24 @@ html,body{
     opacity:1;
 }
 .section .view03 { transform:translateY(-200px); }
+.scrollBtn {
+    position:absolute;
+    bottom:30px; left:50%;
+    transform:translateX(-50%);
+    animation:xScroll 0.8s infinite alternate;
+}
+@keyframes xScroll {
+    to { bottom:50px; }
+}
 
+/* 미디어쿼리 영역 */
 @media screen and (max-width:765px) {
     .section .view03 { transform:translateY(0px); }
+    .scrollBtn { display:none; }
+}
+#myVideo {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
 }

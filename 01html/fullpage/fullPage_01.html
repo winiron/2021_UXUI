@@ -11,7 +11,7 @@
 </head>
 <body>
 <!-- 상단 네비게이션 영역 -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <a class="navbar-brand" href="#">LOGO</a> <!-- 로고 영역 -->
         <!-- 토글 메뉴 버튼 영역-->
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,8 +39,14 @@
     <div id="fullpage">
         <!-- page1 -->
         <div class="section page1" data-anchor="m1st"><!-- 100% -->
+            <video autoplay muted data-autoplay loop id="myVideo">
+                <source src="../images/sample01.mp4">
+            </video>
             <div class="container view01"><!-- 1140px -->
                 HOME
+            </div>
+            <div class="scrollBtn">
+                <a href="#m2st"><img src="images/btn_scroll.png" alt=""></a>
             </div>
         </div>
         <!-- page2 -->
@@ -63,10 +69,10 @@
         </div>
         <!-- page4 -->
         <div class="section page4" data-anchor="m4st"><!-- 100% -->
-            <div class="slide"> Slide 1 </div>
-            <div class="slide"> Slide 2 </div>
-            <div class="slide"> Slide 3 </div>
-            <div class="slide"> Slide 4 </div>
+            <div class="slide">SLIDER 1</div>
+            <div class="slide">SLIDER 2</div>
+            <div class="slide">SLIDER 3</div>
+            <div class="slide">SLIDER 4</div>
         </div>
         <!-- 푸터 영역 -->
         <div class="section fp-auto-height"><!-- 100% -->
