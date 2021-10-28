@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.sv {
+    background:#ccc; 
+    width:100px; height:100px; /* 기본 영역 */
+}
+.sv circle {
+    stroke:green;
+    stroke-width:40;
+    fill:dodgerblue;
+    stroke-dasharray:252;
+    stroke-dashoffset:252;
+    animation:ani 1s forwards alternate;
+    transition:0.3s;
+}
+@keyframes ani {
+    100%{ stroke-dashoffset:50;}
+}
