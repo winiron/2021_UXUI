@@ -5,13 +5,13 @@
 }
 .sv circle {
     stroke:green;
-    stroke-width:40;
+    stroke-width:30;
     fill:dodgerblue;
-    stroke-dasharray:252;
-    stroke-dashoffset:252;
+    stroke-dasharray:189;
+    stroke-dashoffset:189;
     animation:ani 1s forwards alternate;
     transition:0.3s;
 }
 @keyframes ani {
-    100%{ stroke-dashoffset:50;}
+    100%{ stroke-dashoffset:100;}
 }
