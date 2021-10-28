@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.box{}
+.bg{background: #ddd;}
+table{
+    width: 100%;border-collapse: collapse;
+    border-top: 2px solid orange;
+}
+tbody{text-align: center;}
+tbody tr{border-bottom: 1px solid #ccc;}
+tbody td{padding:10px 0;border-right: 1px solid #ccc;}
+tbody td:last-child{border-right: 0 none}
+thead th{padding: 10px 0;background: #555;color:white}
