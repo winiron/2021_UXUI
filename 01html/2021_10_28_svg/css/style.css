@@ -13,5 +13,5 @@
     transition:0.3s;
 }
 @keyframes ani {
-    100%{ stroke-dashoffset:100;}
+    100%{stroke-dashoffset:100;}
 }
