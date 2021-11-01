@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+#wrap {
+    width:300px;
+    height:200px;
+    background:skyblue;
+}
+.cls-1 {
+    fill:none;
+    stroke:red;
+    stroke-width:1;
+    stroke-dasharray:827px;
+    stroke-dashoffset:827px;
+    animation:textAni 2s alternate forwards;
+    opacity:1;
+    transition:0.3s;
+}
+@keyframes textAni {
+    80% {
+        stroke-dashoffset:700;
+        opacity:1
+    } 
+    100% {
+        opacity:0
+    }
+}
+.cls-2{
+    fill:slateblue;
+    stroke:slateblue;
+    stroke-width:1;
+    animation:clsFill 2s alternate forwards;
+    opacity:0;
+    transition:0.3s;
+}
+@keyframes clsFill {
+    50% {
+        opacity:0
+    } 
+    100% {
+        opacity:1
+    }
+}
+.line1 {
+    fill:none;
+    stroke:royalblue;
+    stroke-width:1;
+    stroke-dasharray:210px;
+    stroke-dashoffset: 210px;
+    animation:lineAni1 2s alternate forwards;
+    transition:0.3s;
+}
+@keyframes lineAni1 {
+    /* 0% {
+        stroke-dashoffset: 210px;
+    } */
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

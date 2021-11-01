@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+body {
+    height:300vh;
+}
+#view {
+    position:fixed;
+    z-index:1
+}
+#box {
+    width:500px; height:100vh;
+    background:gray;
+    position:relative; top:100vh
+}
+#box .st01{
+    fill:none;
+    stroke:#fff;
+    stroke-width:1;
+    stroke-dasharray:331;
+    stroke-dashoffset:331;
+    /* animation:lineAni 2s alternate forwards */
+}
+@keyframes lineAni {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+#box.on .st01 {
+    animation:lineAni 2s alternate forwards
+}
+#box.on .line02 {
+    animation-delay:0.2s;
+}
+#box.on .line03 {
+    animation-delay:0.4s;
+}
+#box.on .line04 {
+    animation-delay:0.6s;
+}
+#box.on .line05 {
+    animation-delay:0.8s;
+}
+#box.on .line06 {
+    animation-delay:1s;
+}
+#box.on .line07 {
+    animation-delay:1.2s;
+}
+#box.on .line08 {
+    animation-delay:1.4s;
+}
+#box.on .line09 {
+    animation-delay:1.6s;
+}
+#box.on .line10 {
+    animation-delay:1.8s;
+}
