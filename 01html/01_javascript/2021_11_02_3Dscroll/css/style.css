@@ -2,35 +2,36 @@
 
 body {
     height:500vh;
-    background:#aaa;
+    _background:#aaa;
+    background-color:dodgerblue;
 }
 #wrap {
     width:100vw; height:100vh;
     perspective:1000px;
     position:fixed;
 }
-.stage {
+#wrap > .stage {
     width:100vw; height:100vh;
     transform-style:preserve-3d;
 }
-.innerArea {
+#wrap > .stage > .innerArea {
     width:100vw; height:100vh;
     transform-style:preserve-3d;
     position:relative;
     transform:translate3d(0,0,-500vw);
 }
-.wall {
+#wrap > .stage > .innerArea > .wall {
     position:absolute; left:0; top:0;
     width:100vw; height:100vh;
     background:rgba(255, 255, 255, 0.4);
     display:flex; justify-content:center; align-items:center; 
     font-size:3rem;
 }
-.wall.wall0st.left {
+#wrap > .stage > .innerArea > .wall.wall0st.left {
     width:1000vw;
     transform:rotateY(90deg) translateZ(-500vw);
 }
-.wall.wall0st.right {
+#wrap > .stage > .innerArea > .wall.wall0st.right {
     width:1000vw;
     transform:rotateY(90deg) translateZ(-400vw);
 }
