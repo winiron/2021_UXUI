@@ -5,12 +5,12 @@ body {
 }
 #view {
     position:fixed;
-    z-index:1
+    z-index:1;
 }
 #box {
     width:500px; height:100vh;
     background:gray;
-    position:relative; top:100vh
+    position:relative; top:100vh;
 }
 #box .st01{
     fill:none;
@@ -26,7 +26,7 @@ body {
     }
 }
 #box.on .st01 {
-    animation:lineAni 2s alternate forwards
+    animation:lineAni 2s alternate forwards;
 }
 #box.on .line02 {
     animation-delay:0.2s;
