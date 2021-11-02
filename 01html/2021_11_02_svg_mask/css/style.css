@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#wrap { 
+    width:300px; height:300px;
+}
+.cls-2.eye {
+    fill:#231f20;
+    transform-origin:50% 55%;
+    animation:eye 1s alternate infinite;
+}
+@keyframes eye {
+    80% {
+        transform:scaleY(1); 
+    }
+    100% {
+        transform:scaleY(0.2);
+    }
+}
+.cls-4 { 
+    fill:#ed1c24; 
+}
+.mask1 {
+    fill:#fff;
+    stroke:none;
+}
+.myface {
+    transform:translateX(-10px);
+    animation:faceAni 1s linear alternate infinite
+}
+@keyframes faceAni {
+    to {
+        transform:translateX(-30px)
+    }
+}
