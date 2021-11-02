@@ -10,28 +10,28 @@ body {
     perspective:1000px;
     position:fixed;
 }
-#wrap > .stage {
+#wrap>.stage {
     width:100vw; height:100vh;
     transform-style:preserve-3d;
 }
-#wrap > .stage > .innerArea {
+#wrap>.stage>.innerArea {
     width:100vw; height:100vh;
     transform-style:preserve-3d;
     position:relative;
     transform:translate3d(0,0,-500vw);
 }
-#wrap > .stage > .innerArea > .wall {
+#wrap>.stage>.innerArea>.wall {
     position:absolute; left:0; top:0;
     width:100vw; height:100vh;
     background:rgba(255, 255, 255, 0.4);
     display:flex; justify-content:center; align-items:center; 
     font-size:3rem;
 }
-#wrap > .stage > .innerArea > .wall.wall0st.left {
+#wrap>.stage>.innerArea>.wall.wall0st.left {
     width:1000vw;
     transform:rotateY(90deg) translateZ(-500vw);
 }
-#wrap > .stage > .innerArea > .wall.wall0st.right {
+#wrap>.stage>.innerArea>.wall.wall0st.right {
     width:1000vw;
     transform:rotateY(90deg) translateZ(-400vw);
 }
