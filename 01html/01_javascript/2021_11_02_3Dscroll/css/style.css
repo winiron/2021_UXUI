@@ -35,3 +35,43 @@ body {
     width:1000vw;
     transform:rotateY(90deg) translateZ(-400vw);
 }
+#wrap>.stage>.innerArea>.wall.wall1st {
+    transform:translate3d(0,0,300vw);
+    background-image:url(../images/parallax8.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+#wrap>.stage>.innerArea>.wall.wall2st {
+    transform:translate3d(0,0,200vw);
+    background-image:url(../images/parallax7.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+#wrap>.stage>.innerArea>.wall.wall3st {
+    transform:translate3d(0,0,100vw);
+    background-image:url(../images/parallax6.png);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+#wrap>.stage>.innerArea>.wall.wall4st {
+    transform:translate3d(0,0,0vw);
+}
+#wrap>.stage>.innerArea>.wall.wall5st {
+    transform:translate3d(0,0,-100vw);
+}
+#wrap>.stage>.innerArea>.wall.wall6st {
+    transform:translate3d(0,0,-300vw);
+}
+#wrap>.stage>.innerArea>.wall.wall7st {
+    transform:translate3d(0,0,-400vw);
+}
+#wrap>.stage>.innerArea>.wall.wall8st {
+    transform:translate3d(0,0,-500vw);
+}
+
+
+.bar { width: 100%; height: 10px; background-color: black; position:fixed;}
+.bar .stick { width: 0; height: 100%; background-color: red;}

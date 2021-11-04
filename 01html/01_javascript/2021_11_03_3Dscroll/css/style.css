@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body {
+    height:500vh;
+    background: orange;
+}
+.wrap{
+    width:100vw;height:100vh;
+    position:fixed; left:0;top:0;
+    perspective:1000px;
+}
+.stage{
+    width:100vw; height:100vh;
+    transform-style:preserve-3d;
+}
+.house{
+    width:100vw; height:100vh;
+    transform-style:preserve-3d;
+    position:relative;
+    transform:translate3d(0,0,-500vw)
+}
+.wall{
+    width:100vw; height:100vh;
+    /* background:rgba(255,255,255,0.3); */
+    position:absolute;
+    display:flex;justify-content:center;
+    align-items:center;font-size:8vw;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.wall.wall_0st{
+    width:1000vw;
+    background:rgba(255,255,255,0.3);
+}
+.wall.wall_0st.left{
+     transform:rotateY(90deg) translate3d(0,0,-500vw)
+}
+.wall.wall_0st.right{
+     transform:rotateY(90deg) translate3d(0,0,-400vw)
+}
+.wall.title{
+    transform:translate3d(0,0,500vw);
+    background:dodgerblue;
+    color:white;
+}
+.wall.wall_start{
+    transform:translate3d(0,0,500vw);
+    background:dodgerblue;
+    color:white;
+}
+.wall.wall_1st{
+    transform:translate3d(0,0,400vw);
+    background-image:url("../images/parallax8.png");
+}
+.wall.wall_2st{
+    transform:translate3d(0,0,300vw);
+    background-image:url("../images/parallax7.png");
+}
+.wall.wall_3st{
+    transform:translate3d(0,0,200vw);            
+    background-image:url("../images/parallax6.png");
+}
+.wall.wall_4st{
+    transform:translate3d(0,0,100vw);            
+    background-image:url("../images/parallax5.png");
+}
+
+.wall.wall_6st{
+    transform:translate3d(0,0,-100vw);            
+    background-image:url("../images/parallax4.png");
+}
+.wall.wall_7st{
+    transform:translate3d(0,0,-200vw);            
+    background-image:url("../images/parallax3.png");
+}
+.wall.wall_8st{
+    transform:translate3d(0,0,-300vw);            
+    background-image:url("../images/parallax2.png");
+}
+.wall.wall_9st{
+    transform:translate3d(0,0,-400vw);            
+    background-image:url("../images/parallax1.png");
+}
+.wall.wall_10st{
+    transform:translate3d(0,0,-500vw);            
+    background-image:url("../images/parallax0.png");
+}
+.view{
+    position: fixed;
+}
