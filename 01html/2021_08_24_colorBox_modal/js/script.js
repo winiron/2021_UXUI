@@ -6,4 +6,4 @@ $(".youtube").colorbox({
     iframe:true,
     innerWidth:700,
     innerHeight:394
-})
+});
